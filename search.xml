@@ -27,7 +27,7 @@
       <title>css预处理语言-Less基础</title>
       <link href="/2018/06/11/less-basic-teaching/"/>
       <url>/2018/06/11/less-basic-teaching/</url>
-      <content type="html"><![CDATA[<p>categories: 技术之光</p><blockquote><p>less是css的预处理语言，作为 CSS 的一种扩展，不仅完全兼容 CSS 语法，而且连新增的特性也是使用 CSS 语法。</p></blockquote><h3 id="编译方式"><a href="#编译方式" class="headerlink" title="编译方式"></a>编译方式</h3><p>1.使用koala编译<br>Koala 是一款由国人开发的开源预处理语言图形编译工具，目前已经支持less，sass，compass，coffeescript，很好用。下载地址 <a href="http://koala-app.com/index-zh.html" target="_blank" rel="noopener">http://koala-app.com/index-zh.html</a></p><p>2.使用nodejs<br>在Node.js中安装LESS最简单的方式就是使用Node包管理工具npm来安装：</p><pre><code>// 安装lessnpm install -g less// 编译less文件lessc style.less</code></pre><h3 id="常用方式介绍"><a href="#常用方式介绍" class="headerlink" title="常用方式介绍"></a>常用方式介绍</h3><p>1.变量（变量命名以@开头）</p><pre><code>@myColor: #5B83AD;#header { color: @myColor; }// 编译为：#header { color: #5B83AD; }</code></pre><p>2.混合（mixin）</p><p>不带参数的方式，例如</p><pre><code>.myColor{color: #666}#header｛    width:100px;    height：100px;    .myColor()｝</code></pre><p>混合也可以带参数，例如</p><pre><code>.myColor(@color){color: @color}#header｛    width:100px;    height：100px;    .myColor(#346)｝</code></pre><p>混合也可以定义默认参数值，例如</p><pre><code>// 如果调用不传参数的话，#666为默认值.myColor(@color: #666){color: @color}#header｛    width:100px;    height：100px;    .myColor()｝</code></pre><p>3.嵌套规则</p><pre><code>// 我们之前经常见到ul li的css样式ul{list-style:none}ul li{    height:30px;}ul a｛    color：#222；｝ul a:hover{    color:#777;}// 用less嵌套的话这样写，很好理解，其中&amp;表示上一层元素，就是aul{    list-style:none;    li{        color：#222；        height:30px;    }    a{         color:#222;        &amp;：hover{            color:#777;        }    }}</code></pre><p>4.运算<br>数字可以加减乘除，例如</p><pre><code>@myFont:14px；#d1{    font-size：8px+@myFont}// 结果为#d1{    font-size：22px}</code></pre><p>颜色也可以运算，要先转化为10进制。</p><p>5.匹配模式<br>类似于js的条件运算</p><pre><code>.test（top，@w:100px）｛    height：@w;｝.test（bottom，@w:200px）｛    height：@w;｝#header｛    .test(top,120px); //匹配第一个.test｝</code></pre><p>6.@arguments</p><p>@arguments包含了所有传递进来的参数. 如果你不想单独处理每一个参数的话就可以像这样写:</p><pre><code>.box-shadow (@x: 0, @y: 0, @blur: 1px, @color: #000) {  box-shadow: @arguments;  -moz-box-shadow: @arguments;  -webkit-box-shadow: @arguments;}.box-shadow(2px, 5px);// 编译得到box-shadow: 2px 5px 1px #000;-moz-box-shadow: 2px 5px 1px #000;-webkit-box-shadow: 2px 5px 1px #000;</code></pre><p>7.避免编译</p><p>有时候我们需要输出一些不正确的CSS语法或者使用一些 LESS不认识的专有语法.</p><p>要输出这样的值我们可以在字符串前加上一个 ~, 例如:</p><pre><code>.class {  width:calc(~&quot;100% - 4px&quot;);}// 编译得到.class {  width:calc(100% - 4px);}</code></pre><h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><p><a href="http://www.bootcss.com/p/lesscss/" target="_blank" rel="noopener">less基础入门</a></p>]]></content>
+      <content type="html"><![CDATA[<blockquote><p>less是css的预处理语言，作为 CSS 的一种扩展，不仅完全兼容 CSS 语法，而且连新增的特性也是使用 CSS 语法。</p></blockquote><h3 id="编译方式"><a href="#编译方式" class="headerlink" title="编译方式"></a>编译方式</h3><p>1.使用koala编译<br>Koala 是一款由国人开发的开源预处理语言图形编译工具，目前已经支持less，sass，compass，coffeescript，很好用。下载地址 <a href="http://koala-app.com/index-zh.html" target="_blank" rel="noopener">http://koala-app.com/index-zh.html</a></p><p>2.使用nodejs<br>在Node.js中安装LESS最简单的方式就是使用Node包管理工具npm来安装：</p><pre><code>// 安装lessnpm install -g less// 编译less文件lessc style.less</code></pre><h3 id="常用方式介绍"><a href="#常用方式介绍" class="headerlink" title="常用方式介绍"></a>常用方式介绍</h3><p>1.变量（变量命名以@开头）</p><pre><code>@myColor: #5B83AD;#header { color: @myColor; }// 编译为：#header { color: #5B83AD; }</code></pre><p>2.混合（mixin）</p><p>不带参数的方式，例如</p><pre><code>.myColor{color: #666}#header｛    width:100px;    height：100px;    .myColor()｝</code></pre><p>混合也可以带参数，例如</p><pre><code>.myColor(@color){color: @color}#header｛    width:100px;    height：100px;    .myColor(#346)｝</code></pre><p>混合也可以定义默认参数值，例如</p><pre><code>// 如果调用不传参数的话，#666为默认值.myColor(@color: #666){color: @color}#header｛    width:100px;    height：100px;    .myColor()｝</code></pre><p>3.嵌套规则</p><pre><code>// 我们之前经常见到ul li的css样式ul{list-style:none}ul li{    height:30px;}ul a｛    color：#222；｝ul a:hover{    color:#777;}// 用less嵌套的话这样写，很好理解，其中&amp;表示上一层元素，就是aul{    list-style:none;    li{        color：#222；        height:30px;    }    a{         color:#222;        &amp;：hover{            color:#777;        }    }}</code></pre><p>4.运算<br>数字可以加减乘除，例如</p><pre><code>@myFont:14px；#d1{    font-size：8px+@myFont}// 结果为#d1{    font-size：22px}</code></pre><p>颜色也可以运算，要先转化为10进制。</p><p>5.匹配模式<br>类似于js的条件运算</p><pre><code>.test（top，@w:100px）｛    height：@w;｝.test（bottom，@w:200px）｛    height：@w;｝#header｛    .test(top,120px); //匹配第一个.test｝</code></pre><p>6.@arguments</p><p>@arguments包含了所有传递进来的参数. 如果你不想单独处理每一个参数的话就可以像这样写:</p><pre><code>.box-shadow (@x: 0, @y: 0, @blur: 1px, @color: #000) {  box-shadow: @arguments;  -moz-box-shadow: @arguments;  -webkit-box-shadow: @arguments;}.box-shadow(2px, 5px);// 编译得到box-shadow: 2px 5px 1px #000;-moz-box-shadow: 2px 5px 1px #000;-webkit-box-shadow: 2px 5px 1px #000;</code></pre><p>7.避免编译</p><p>有时候我们需要输出一些不正确的CSS语法或者使用一些 LESS不认识的专有语法.</p><p>要输出这样的值我们可以在字符串前加上一个 ~, 例如:</p><pre><code>.class {  width:calc(~&quot;100% - 4px&quot;);}// 编译得到.class {  width:calc(100% - 4px);}</code></pre><h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><p><a href="http://www.bootcss.com/p/lesscss/" target="_blank" rel="noopener">less基础入门</a></p>]]></content>
       
       <categories>
           
@@ -144,17 +144,17 @@
   
     
     <entry>
-      <title>照片墙</title>
-      <link href="/photo/index.html"/>
-      <url>/photo/index.html</url>
-      <content type="html"><![CDATA[<p>还没有图片</p>]]></content>
-    </entry>
-    
-    <entry>
       <title>标签云</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
       <content type="html"><![CDATA[]]></content>
+    </entry>
+    
+    <entry>
+      <title>照片墙</title>
+      <link href="/photo/index.html"/>
+      <url>/photo/index.html</url>
+      <content type="html"><![CDATA[<p>还没有图片</p>]]></content>
     </entry>
     
   
