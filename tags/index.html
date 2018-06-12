@@ -45,9 +45,9 @@
     
     <title>
         
-            标签云 | 
+            标签 | 
         
-        Xzillion
+        Xzillion&#39;s Blog
     </title>
 
     <!-- Favicons -->
@@ -216,11 +216,11 @@
 
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Xzillion">
+    <meta name="application-name" content="Xzillion&#39;s Blog">
     <meta name="msapplication-starturl" content="https://blog.bestxz.cn/tags/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="Xzillion">
+    <meta name="apple-mobile-web-app-title" content="Xzillion&#39;s Blog">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="apple-touch-icon" href="http://odqpd0nco.bkt.clouddn.com/blog/images/1488003881200tmp.jpg">
 
@@ -238,7 +238,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://blog.bestxz.cn/tags/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="标签云 | Xzillion">
+    <meta property="og:title" content="标签 | Xzillion&#39;s Blog">
     <meta property="og:image" content="http://odqpd0nco.bkt.clouddn.com/blog/images/1488003881200tmp.jpg">
     <meta property="og:description" content="a blog for coding and life">
     
@@ -410,6 +410,8 @@
         <li id="sidebar-first-li">
             <a href="/">
                 
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
                 主页
             </a>
         </li>
@@ -455,15 +457,27 @@
     <!-- Pages  -->
     
         <li>
-            <a href="/tags" title="标签云">
+            <a href="/tags" title="标签">
                 
-                标签云
+                    <i class="material-icons sidebar-material-icons">bookmark</i>
+                
+                标签
             </a>
         </li>
         
     
 
     <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">6</span>
+            </a>
+        </li>
+        
+            <li class="divider"></li>
+        
     
 </ul>
 
@@ -481,17 +495,8 @@ It will not impact the appearance and can give developers a lot of support :)
 
 <!-- Sidebar Divider -->
 
-    <div class="sidebar-divider"></div>
-
 
 <!-- Theme Material -->
-
-    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
-        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
-            主题 - Material
-            <span class="sidebar-badge badge-circle">i</span>
-        </div>
-    </a>
 
 
 <!-- Help & Support -->
@@ -565,7 +570,7 @@ It will not impact the appearance and can give developers a lot of support :)
 
         <!--Copyright-->
         <div id="copyright">
-            Copyright&nbsp;©<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>Xzillion
+            Copyright&nbsp;©<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>Xzillion's Blog
             
         </div>
 
@@ -667,8 +672,10 @@ It will not impact the appearance and can give developers a lot of support :)
     
     
         
+            HanabiBrowser.clearColors();
         
-        HanabiBrowser.start('pre code',true);
+        
+        HanabiBrowser.start('pre code',false);
     
 </script>
 
