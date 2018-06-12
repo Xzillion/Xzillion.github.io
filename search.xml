@@ -105,9 +105,9 @@
       
         <tags>
             
-            <tag> JavaScript </tag>
-            
             <tag> JQuery </tag>
+            
+            <tag> JavaScript </tag>
             
             <tag> Dom </tag>
             
@@ -144,6 +144,13 @@
   
     
     <entry>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
+      <content type="html"><![CDATA[]]></content>
+    </entry>
+    
+    <entry>
       <title>search</title>
       <link href="/search/index.html"/>
       <url>/search/index.html</url>
@@ -155,13 +162,6 @@
       <link href="/photo/index.html"/>
       <url>/photo/index.html</url>
       <content type="html"><![CDATA[<p>还没有图片</p>]]></content>
-    </entry>
-    
-    <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
-      <content type="html"><![CDATA[]]></content>
     </entry>
     
   
