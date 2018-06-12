@@ -105,9 +105,9 @@
       
         <tags>
             
-            <tag> JQuery </tag>
-            
             <tag> JavaScript </tag>
+            
+            <tag> JQuery </tag>
             
             <tag> Dom </tag>
             
@@ -151,16 +151,16 @@
     </entry>
     
     <entry>
-      <title>search</title>
-      <link href="/search/index.html"/>
-      <url>/search/index.html</url>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       <content type="html"><![CDATA[]]></content>
     </entry>
     
     <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>search</title>
+      <link href="/search/index.html"/>
+      <url>/search/index.html</url>
       <content type="html"><![CDATA[]]></content>
     </entry>
     
