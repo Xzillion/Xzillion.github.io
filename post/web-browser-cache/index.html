@@ -45,7 +45,7 @@
     
     <title>
         
-            angularJs应用如何去除路径上的#号？ | 
+            浅谈浏览器缓存 | 
         
         Xzillion&#39;s Blog
     </title>
@@ -56,7 +56,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="a blog for coding and life">
-    <meta name="keywords" content="xzillion,angularJs,JavaScript,Web">
+    <meta name="keywords" content="xzillion,Browser,Cache">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -217,7 +217,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Xzillion&#39;s Blog">
-    <meta name="msapplication-starturl" content="https://blog.bestxz.cn/post/angularJs-browser-history/">
+    <meta name="msapplication-starturl" content="https://blog.bestxz.cn/post/web-browser-cache/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Xzillion&#39;s Blog">
@@ -236,16 +236,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="https://blog.bestxz.cn/post/angularJs-browser-history/">
+    <meta property="og:url" content="https://blog.bestxz.cn/post/web-browser-cache/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="angularJs应用如何去除路径上的#号？ | Xzillion&#39;s Blog">
+    <meta property="og:title" content="浅谈浏览器缓存 | Xzillion&#39;s Blog">
     <meta property="og:image" content="http://odqpd0nco.bkt.clouddn.com/blog/images/1488003881200tmp.jpg">
     <meta property="og:description" content="a blog for coding and life">
-    <meta property="og:article:tag" content="angularJs"> <meta property="og:article:tag" content="JavaScript"> <meta property="og:article:tag" content="Web"> 
+    <meta property="og:article:tag" content="Browser"> <meta property="og:article:tag" content="Cache"> 
 
     
-        <meta property="article:published_time" content="Thu May 10 2018 09:02:58 GMT+0800">
-        <meta property="article:modified_time" content="Tue Jun 12 2018 23:07:32 GMT+0800">
+        <meta property="article:published_time" content="Wed Jun 13 2018 23:08:20 GMT+0800">
+        <meta property="article:modified_time" content="Thu Jun 14 2018 02:08:12 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -253,7 +253,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://blog.bestxz.cn/post/angularJs-browser-history/index.html" />
+        <link rel="canonical" href="https://blog.bestxz.cn/post/web-browser-cache/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -265,10 +265,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "https://blog.bestxz.cn/post/angularJs-browser-history/index.html",
-    "headline": "angularJs应用如何去除路径上的#号？",
-    "datePublished": "Thu May 10 2018 09:02:58 GMT+0800",
-    "dateModified": "Tue Jun 12 2018 23:07:32 GMT+0800",
+    "mainEntityOfPage": "https://blog.bestxz.cn/post/web-browser-cache/index.html",
+    "headline": "浅谈浏览器缓存",
+    "datePublished": "Wed Jun 13 2018 23:08:20 GMT+0800",
+    "dateModified": "Thu Jun 14 2018 02:08:12 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Xzillion",
@@ -286,7 +286,7 @@
             "url": "http://odqpd0nco.bkt.clouddn.com/blog/images/1488003881200tmp.jpg"
         }
     },
-    "keywords": ",angularJs,JavaScript,Webxzillion",
+    "keywords": ",Browser,Cachexzillion",
     "description": "a blog for coding and life",
 }
 </script>
@@ -356,7 +356,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">1.</span> <span class="post-toc-text">1 为什么angularJs应用路径上会存在#号？</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">2.</span> <span class="post-toc-text">2 去除路径中存在的#号</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">2.1 在angularJs路由配置html5Mode</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">3.</span> <span class="post-toc-text">2.2 在首页中配置基本路径</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">4.</span> <span class="post-toc-text">2.3 在服务端的配置</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">2.3.1 Nginx配置</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">2.3.2 Express配置</span></a></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">1.</span> <span class="post-toc-text">浏览器缓存基本认识</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">2.</span> <span class="post-toc-text">强缓存的原理</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">3.</span> <span class="post-toc-text">强缓存的管理</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">4.</span> <span class="post-toc-text">强缓存的应用</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">5.</span> <span class="post-toc-text">协商缓存的原理</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">6.</span> <span class="post-toc-text">协商缓存的管理</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">7.</span> <span class="post-toc-text">浏览器行为对缓存的影响</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">8.</span> <span class="post-toc-text">参考链接</span></a></li></ol>
     </ul>
     
 
@@ -376,10 +376,10 @@
     <!-- Paradox Post Header -->
     
         <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://odqpd0nco.bkt.clouddn.com/blog/images/angularJs.png)">
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://odqpd0nco.bkt.clouddn.com/blog/images/web-browser.png)">
     
             <p class="article-headline-p">
-                angularJs应用如何去除路径上的#号？
+                浅谈浏览器缓存
             </p>
         </div>
 
@@ -398,7 +398,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>Xzillion</strong>
-        <span>5月 10, 2018</span>
+        <span>6月 13, 2018</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -420,7 +420,7 @@
 <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
     <li class="mdl-menu__item">在其它设备中阅读本文章</li>
     
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAAC30lEQVR42u3aS27DMAwFQN//0um2QFvnkXQTRxqtDAORNdow/ByPLdeBjY2NjY2NjY2NfUv2Ea/zX31///O5edDTnctnxsbGxl6anX/+L/z5mx4j2TM/MzY2NvYO7GpYqh73/OImYTK5GmxsbGzs/AryENhLLbCxsbGx5+xqOSkvCfVSGmxsbGzsapm+WvrPA9t5QvK2Who2Njb27dmTNOBdzy/tb2NjY2PfmD0fo6kmHuUUohUyfzk5NjY29qLsarknDyF5gSm53Pzr2NjY2DuzkzGaUYG+9atewwAbGxt7N3Z+3CRRqZZ7kt3mX8HGxsZelZ23XZPkZHLcalEpPw82Njb22uyoHDMYmsmHchJS0mZoxm1sbGzsj2Xnx80DTD5qk2CqCVJUVMLGxsZeiJ03A3oDOr2Cfq/N/CRwYmNjYy/KnjQAkiGbaiB8xCu5FGxsbOwd2L3Uojpwk+9TDU6FBgY2Njb2Bux8vCZ5f9U+1TJToaiEjY2NvQR7cuheWarcoL2qwYyNjY29NHvCy9uxE1LSAHgSArGxsbEXZVdL+demFnn7Ng+Ef14ENjY29qLs5G99QpokIdc2HrCxsbH3ZPdSiMmhkxJSft2XDV9iY2Njfyx7kgxUrylvDOQ7RNeEjY2NvTR7HmyqAzRJa7kXuspdEWxsbOwPZ8/LOr2k4vw5T2YKV4yNjY29JTtpph6tlQOqp4qKStjY2NiLsqupwmSsp1pOyhu65VQEGxsbeyF2NUgkiUe15TAPk9jY2Ni7sasrDzaTEJi3GQrFL2xsbOxF2ZMyUC+k5VeZtxOia8XGxsZemp0HrTxgnO9WHQz6lwCGjY2NvRw7H2pMyk+9MtOkbdwMYNjY2NhbsvNAkoSf5Cu9wR1sbGxs7PxAvfSm1xJopjrY2NjYG7An7dveFSS8SXsYGxsbex92b6gxKSRV8VXki/rb2NjY2Ddm77OwsbGxsbGxsbGxb7O+ANIG4pXhbyk0AAAAAElFTkSuQmCC">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACXklEQVR42u3aQXLcMAwEwP3/p5MH2N7MQBSsbLVOWyqJZutA0sC8/nz09cLDw8PDw8PDw3sY7xVfPw739sl85Nm737yFh4eHt8L7x1IbPPN+Ql/HyZ9p54aHh4e3yWun9RMsGT/fVPK54eHh4f2PvGR7SDYVPDw8vM/jRUfb6xPFw8PDezwv+Yc/OUzPNoZH1Frw8PDwYt6sTbXze7W/h4eHhxfw6khTGSbI22Ntsy0KXeHh4eHdwMsX4vwQXC/lbzehej54eHh4N/NmLaikKJCXYpOiRrG14OHh4d3MOzBceT//NPk88fDw8DZ5yRRny/fswH04OoCHh4e3ErpqCwTXAwF5qCvaQvDw8PDWebOSQRtHaNlJ2RcPDw9vh5e83GLaIu+skFEUI/Dw8PCO8tpD86z9337KS2w8PDy8m3nJgpuT8gDBrAkXzRYPDw9vhZcPOouT5ofyK802PDw8vB1eXmA9e/BtC7WXMmV4eHh4K7z7SrFtlCr/rHh4eHj7vHzqs9BAXjhu4194eHh4v8ubhQCu4JPybnEHDw8Pb4XX3pkVZ/NIQV5ojo7UeHh4eLfxZsXTU82z6zECPDw8vH3e7M7ZMMGs2YaHh4e3yWuvvNnfFnZnx3c8PDy8fd4rvhJwe/xtj9dJIQMPDw9vh5dvBqcW9/ZzFG0zPDw8vEXelfBoGx1oS8nFNoOHh4f3eN6VibafIBoBDw8P75G8PHo1K/62QSs8PDy83+LlTa82qvUeljfeDoSu8PDw8A7x8oPvKcasABH9RTw8PLybeZ934eHh4eHh4eHhPeD6C6aUPtqQQUs8AAAAAElFTkSuQmCC">
     
 </ul>
 
@@ -434,7 +434,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/JavaScript/">JavaScript</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/Web/">Web</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/angularJs/">angularJs</a>
+        <a class="post_tag-link" href="/tags/Browser/">Browser</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/Cache/">Cache</a>
     </ul>
     
 
@@ -451,7 +451,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=angularJs应用如何去除路径上的#号？&url=https://blog.bestxz.cn/post/angularJs-browser-history/index.html&pic=https://blog.bestxz.cnhttp://odqpd0nco.bkt.clouddn.com/blog/images/1488003881200tmp.jpg&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=浅谈浏览器缓存&url=https://blog.bestxz.cn/post/web-browser-cache/index.html&pic=https://blog.bestxz.cnhttp://odqpd0nco.bkt.clouddn.com/blog/images/1488003881200tmp.jpg&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -460,7 +460,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=angularJs应用如何去除路径上的#号？&url=https://blog.bestxz.cn/post/angularJs-browser-history/index.html&via=Xzillion" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=浅谈浏览器缓存&url=https://blog.bestxz.cn/post/web-browser-cache/index.html&via=Xzillion" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -469,7 +469,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.bestxz.cn/post/angularJs-browser-history/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.bestxz.cn/post/web-browser-cache/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -478,7 +478,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=https://blog.bestxz.cn/post/angularJs-browser-history/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://blog.bestxz.cn/post/web-browser-cache/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -504,77 +504,99 @@
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
         <blockquote>
-<p>作为强迫症晚期患者，当然不能容许#号的存在。
-&lt;!--more--&gt;</p>
+<p>浏览器缓存，也就是客户端缓存，既是网页性能优化里面静态资源相关优化的一大利器，也是无数web开发人员在工作过程不可避免的一大问题，所以在产品开发的时候我们总是想办法避免缓存产生，而在产品发布之时又在想策略管理缓存提升网页的访问速度。了解浏览器的缓存命中原理，是开发web应用的基础，本文着眼于此，学习浏览器缓存的相关知识，总结缓存避免和缓存管理的方法，结合具体的场景说明缓存的相关问题。希望能对有需要的人有所帮助。</p>
 </blockquote>
-<h3>1 为什么angularJs应用路径上会存在#号？</h3>
-<p>AngularJS是单页应用，一个ng-app对应一个页面，一个URL。AngularJS实现了自己的前端路由，让一个ng-app可以管理多个URL，再对应到多个ng-vew上面。当我们去访问URL的时候，浏览器会向服务器发送request请求，若此时服务器端不存在该请求对应的文件资源，则会抛出404错误，为了解决这一问题，angularJs默认在访问路径中添加#号，使得浏览器不向服务器发送请求，转而由自带的router处理，这样就不会出现404报错问题。在reactJs框架中也存在类似的概念（hashHistory和browserHistory）。</p>
-<h3>2 去除路径中存在的#号</h3>
-<p>在1中提到，当路径中不存在#号时，浏览器会向服务端发送request请求，此时可能触发404错误，那么我们要做到去除#又不触发404错误，就必须在服务端进行一些配置。</p>
-<h4>2.1 在angularJs路由配置html5Mode</h4>
-<pre><code>function routeConfig($stateProvider, $urlRouterProvider, $qProvider, $locationProvider) {
-    /**
-     * 配置路由
-     */
-    $qProvider.errorOnUnhandledRejections(false);
-    $urlRouterProvider.otherwise('home/pageOne/pageOne');//路径没有配置路由的时候默认跳转到指定路径
-    $stateProvider
-        .state('home',{
-            url: '/home',
-            abstract: true,
-            templateUrl: 'views/home.html',
-            controller: 'homeCtrl',
-        })
-        ........
-..........
-    $locationProvider.html5Mode(true);/*去除路由#号，为了避免请求转发到后端server触发404错误，nginx也需要相关配置*/
-
-}
-</code></pre>
-<h3>2.2 在首页中配置基本路径</h3>
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;base href=&quot;/&quot;&gt;&lt;!--去除路由的#号--&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-    &lt;meta name=&quot;renderer&quot; content=&quot;webkit|ie-comp|ie-stand&quot;&gt;
-    &lt;title&gt;classSouvenir&lt;/title&gt;
-    &lt;link href=&quot;styles/min/main.min.css&quot; rel=&quot;stylesheet&quot;&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div ui-view&gt;&lt;/div&gt;
-&lt;script data-main=&quot;scripts/main.min&quot; src=&quot;scripts/libs/requirejs/require.js&quot;&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-<p>==注意： 若不配置基本路径，则会抛出Error: $location:nobase错误。==</p>
-<h3>2.3 在服务端的配置</h3>
-<h4>2.3.1 Nginx配置</h4>
-<p>编辑nginx的配置文件，增加try_files配置。</p>
-<pre><code>server {
-        set $htdocs /www/deploy/mysite/onbook;
-        listen 80;
-        server_name onbook.me;
-        location / {
-            root $htdocs;
-            try_files $uri $uri/ /index.html =404;
-       	 }
-	}
-</code></pre>
-<h4>2.3.2 Express配置</h4>
-<p>Express框架的路由访问控制文件server.js，增加路由配置。</p>
-<pre><code>app.use(function (req, res) {
-    console.log(req.path);
-    if(req.path.indexOf('/api')&gt;=0){
-        res.send(&quot;server text&quot;);
-
-    }else{ //angular启动页
-        res.sendfile('app/index.html');
-    }
-});
-</code></pre>
-<p>==注意：若服务端不进行配置，则用户通过url直接访问页面时显示正常，但刷新页面或者通过路由跳转时会发生找不到页面的错误。==</p>
+<h3>浏览器缓存基本认识</h3>
+<p>浏览器缓存分为强缓存和协商缓存两种，浏览器器加载资源的过程如下：</p>
+<p>1.浏览器在加载资源时，先根据这个资源的一些http header判断它是否命中强缓存，强缓存如果命中，浏览器直接从自己的缓存中读取资源，不会发请求到服务器。比如某个css文件，如果浏览器在加载它所在的网页时，这个css文件的缓存配置命中了强缓存，浏览器就直接从缓存中加载这个css，连请求都不会发送到网页所在服务器；</p>
+<p>2.当强缓存没有命中的时候，浏览器一定会发送一个请求到服务器，通过服务器端依据资源的另外一些http header验证这个资源是否命中协商缓存，如果协商缓存命中，服务器会将这个请求返回，但是不会返回这个资源的数据，而是告诉客户端可以直接从缓存中加载这个资源，于是浏览器就又会从自己的缓存中去加载这个资源；</p>
+<p>3.强缓存与协商缓存的共同点是：如果命中，都是从客户端缓存中加载资源，而不是从服务器加载资源数据；区别是：强缓存不发请求到服务器，协商缓存会发请求到服务器。</p>
+<p>4.当协商缓存也没有命中的时候，浏览器直接从服务器加载资源数据。</p>
+<h3>强缓存的原理</h3>
+<p>当浏览器对某个资源的请求命中了强缓存时，返回的http状态为200，在chrome的开发者工具的network里面size会显示为from cache，比如京东的首页里就有很多静态资源配置了强缓存，用chrome打开几次，再用f12查看network，可以看到有不少请求就是从缓存中加载的：
+<img src="http://odqpd0nco.bkt.clouddn.com/blog/images/browser-cache-1.png" alt="从缓存中加载资源">
+强缓存是利用Expires或者Cache-Control这两个http response header实现的，它们都用来表示资源在客户端缓存的有效期。
+Expires是http1.0提出的一个表示资源过期时间的header，它描述的是一个绝对时间，由服务器返回，用GMT格式的字符串表示，如：Expires:Thu, 31 Dec 2037 23:55:55 GMT，它的缓存原理是：</p>
+<p>1.浏览器第一次跟服务器请求一个资源，服务器在返回这个资源的同时，在respone的header加上Expires的header，如:<br>
+<img src="http://odqpd0nco.bkt.clouddn.com/blog/images/browser-cache-2.png" alt="缓存的有效时间"></p>
+<p>2.浏览器在接收到这个资源后，会把这个资源连同所有response header一起缓存下来（所以缓存命中的请求返回的header并不是来自服务器，而是来自之前缓存的header）；</p>
+<p>3.浏览器再请求这个资源时，先从缓存中寻找，找到这个资源后，拿出它的Expires跟当前的请求时间比较，如果请求时间在Expires指定的时间之前，就能命中缓存，否则就不行。</p>
+<p>4.如果缓存没有命中，浏览器直接从服务器加载资源时，Expires Header在重新加载的时候会被更新。</p>
+<p>Expires是较老的强缓存管理header，由于它是服务器返回的一个绝对时间，在服务器时间与客户端时间相差较大时，缓存管理容易出现问题，比如随意修改下客户端时间，就能影响缓存命中的结果。所以在http1.1的时候，提出了一个新的header，就是Cache-Control，这是一个相对时间，在配置缓存的时候，以秒为单位，用数值表示，如：Cache-Control:max-age=315360000，它的缓存原理是：</p>
+<p>1.浏览器第一次跟服务器请求一个资源，服务器在返回这个资源的同时，在respone的header加上Cache-Control的header，如:<br>
+<img src="http://odqpd0nco.bkt.clouddn.com/blog/images/browser-cache-3.png" alt="响应头的Cache-Control"></p>
+<p>2.浏览器在接收到这个资源后，会把这个资源连同所有response header一起缓存下来；</p>
+<p>3.浏览器再请求这个资源时，先从缓存中寻找，找到这个资源后，根据它第一次的请求时间和Cache-Control设定的有效期，计算出一个资源过期时间，再拿这个过期时间跟当前的请求时间比较，如果请求时间在过期时间之前，就能命中缓存，否则就不行。</p>
+<p>4.如果缓存没有命中，浏览器直接从服务器加载资源时，Cache-Control Header在重新加载的时候会被更新。</p>
+<p>Cache-Control描述的是一个相对时间，在进行缓存命中的时候，都是利用客户端时间进行判断，所以相比较Expires，Cache-Control的缓存管理更有效，安全一些。</p>
+<p>这两个header可以只启用一个，也可以同时启用，当response header中，Expires和Cache-Control同时存在时，Cache-Control优先级高于Expires:<br>
+<img src="http://odqpd0nco.bkt.clouddn.com/blog/images/browser-cache-15.png" alt="Cache-Control和Expires的优先级"></p>
+<h3>强缓存的管理</h3>
+<p>前面介绍的是强缓存的原理，在实际应用中我们会碰到需要强缓存的场景和不需要强缓存的场景，通常有2种方式来设置是否启用强缓存：</p>
+<p>1.通过代码的方式，在web服务器返回的响应中添加Expires和Cache-Control Header；</p>
+<p>2.通过配置web服务器的方式，让web服务器在响应资源的时候统一添加Expires和Cache-Control Header；</p>
+<p>tomcat还提供了一个ExpiresFilter专门用来配置强缓存，具体使用的方式可参考tomcat的官方文档：</p>
+<p><a href="http://tomcat.apache.org/tomcat-7.0-doc/config/filter.html#Expires_Filter" target="_blank" rel="noopener">tomcat文档</a></p>
+<p>nginx和apache作为专业的web服务器，都有专门的配置文件，可以配置expires和cache-control，这方面的知识，如果你对运维感兴趣的话，可以在百度上搜索“nginx 设置 expires cache-control”或“apache 设置 expires cache-control”都能找到不少相关的文章。</p>
+<p>由于在开发的时候不会专门去配置强缓存，而浏览器又默认会缓存图片，css和js等静态资源，所以开发环境下经常会因为强缓存导致资源没有及时更新而看不到最新的效果，解决这个问题的方法有很多，常用的有以下几种：</p>
+<p>1.直接ctrlf5，这个办法能解决页面直接引用的资源更新的问题；</p>
+<p>2.使用浏览器的隐私模式开发；</p>
+<p>3.如果用的是chrome，可以f12在network那里把缓存给禁掉（这是个非常有效的方法）：</p>
+<p>4.在开发阶段，给资源加上一个动态的参数，如css/index.css?v=0.0001，由于每次资源的修改都要更新引用的位置，同时修改参数的值，所以操作起来不是很方便，除非你是在动态页面比如jsp里开发就可以用服务器变量来解决（v=${sysRnd}），或者你能用一些前端的构建工具来处理这个参数修改的问题；</p>
+<p>5.如果资源引用的页面，被嵌入到了一个iframe里面，可以在iframe的区域右键单击重新加载该页面，以chrome为例：
+<img src="http://odqpd0nco.bkt.clouddn.com/blog/images/browser-cache-5.png" alt="刷新资源引用"></p>
+<p>5.如果缓存问题出现在ajax请求中，最有效的解决办法就是ajax的请求地址追加随机数；</p>
+<p>6.还有一种情况就是动态设置iframe的src时，有可能也会因为缓存问题，导致看不到最新的效果，这时候在要设置的src后面添加随机数也能解决问题；</p>
+<p>7.如果你用的是grunt和gulp这种前端工具开发，通过它们的插件比如grunt-contrib-connect来启动一个静态服务器，则完全不用担心开发阶段的资源更新问题，因为在这个静态服务器下的所有资源返回的respone header中，cache-control始终被设置为不缓存；</p>
+<h3>强缓存的应用</h3>
+<p>强缓存是前端性能优化最有力的工具，没有之一，对于有大量静态资源的网页，一定要利用强缓存，提高响应速度。通常的做法是，为这些静态资源全部配置一个超时时间超长的Expires或Cache-Control，这样用户在访问网页时，只会在第一次加载时从服务器请求静态资源，其它时候只要缓存没有失效并且用户没有强制刷新的条件下都会从自己的缓存中加载，比如前面提到过的京东首页缓存的资源，它的缓存过期时间都设置到了2028年：
+<img src="http://odqpd0nco.bkt.clouddn.com/blog/images/browser-cache-7.png" alt="不过期的缓存"></p>
+<p>然而这种缓存配置方式会带来一个新的问题，就是发布时资源更新的问题，比如某一张图片，在用户访问第一个版本的时候已经缓存到了用户的电脑上，当网站发布新版本，替换了这个图片时，已经访问过第一个版本的用户由于缓存的设置，导致在默认的情况下不会请求服务器最新的图片资源，除非他清掉或禁用缓存或者强制刷新，否则就看不到最新的图片效果。
+这个问题已经有成熟的解决方案，具体内容可阅读知乎这篇文章详细了解：</p>
+<p><a href="http://www.zhihu.com/question/20790576" target="_blank" rel="noopener">解决超长缓存更新问题</a></p>
+<p>文章提到的东西都属于理论上的解决方案，不过现在已经有很多前端工具能够实际地解决这个问题，由于每个工具涉及到的内容细节都有很多，本文没有办法一一深入介绍。有兴趣的可以去了解下grunt gulp webpack fis 还有edp这几个工具，基于这几个工具都能解决这个问题，尤其是fis和edp是百度推出的前端开发平台，有现成的文档可以参考：</p>
+<p><a href="http://fis.baidu.com/fis3/api/index.html" target="_blank" rel="noopener">百度fis</a></p>
+<p><a href="http://ecomfe.github.io/edp/doc/initialization/install/" target="_blank" rel="noopener">百度edp</a></p>
+<p>强缓存还有一点需要注意的是，通常都是针对静态资源使用，动态资源需要慎用，除了服务端页面可以看作动态资源外，那些引用静态资源的html也可以看作是动态资源，如果这种html也被缓存，当这些html更新之后，可能就没有机制能够通知浏览器这些html有更新，尤其是前后端分离的应用里，页面都是纯html页面，每个访问地址可能都是直接访问html页面，这些页面通常不加强缓存，以保证浏览器访问这些页面时始终请求服务器最新的资源。</p>
+<h3>协商缓存的原理</h3>
+<p>当浏览器对某个资源的请求没有命中强缓存，就会发一个请求到服务器，验证协商缓存是否命中，如果协商缓存命中，请求响应返回的http状态为304并且会显示一个Not Modified的字符串，比如你打开京东的首页，按f12打开开发者工具，再按f5刷新页面，查看network，可以看到有的请求就是命中了协商缓存的：
+<img src="http://odqpd0nco.bkt.clouddn.com/blog/images/browser-cache-9.png" alt="协商缓存">
+查看单个请求的Response Header，也能看到304的状态码和Not Modified的字符串，只要看到这个就可说明这个资源是命中了协商缓存，然后从客户端缓存中加载的，而不是服务器最新的资源；
+协商缓存是利用的是【Last-Modified，If-Modified-Since】和【ETag、If-None-Match】这两对Header来管理的。
+【Last-Modified，If-Modified-Since】的控制缓存的原理是：</p>
+<p>1.浏览器第一次跟服务器请求一个资源，服务器在返回这个资源的同时，在respone的header加上Last-Modified的header，这个header表示这个资源在服务器上的最后修改时间：
+<img src="http://odqpd0nco.bkt.clouddn.com/blog/images/browser-cache-10.png" alt="响应头的Last-Modified"></p>
+<p>2.浏览器再次跟服务器请求这个资源时，在request的header上加上If-Modified-Since的header，这个header的值就是上一次请求时返回的Last-Modified的值：
+<img src="http://odqpd0nco.bkt.clouddn.com/blog/images/browser-cache-11.png" alt="响应头的If-Modified-Since"></p>
+<p>3.服务器再次收到资源请求时，根据浏览器传过来If-Modified-Since和资源在服务器上的最后修改时间判断资源是否有变化，如果没有变化则返回304 Not Modified，但是不会返回资源内容；如果有变化，就正常返回资源内容。当服务器返回304 Not Modified的响应时，response header中不会再添加Last-Modified的header，因为既然资源没有变化，那么Last-Modified也就不会改变，这是服务器返回304时的response header：
+<img src="http://odqpd0nco.bkt.clouddn.com/blog/images/browser-cache-12.png" alt="协商缓存的响应头"></p>
+<p>4.浏览器收到304的响应后，就会从缓存中加载资源;</p>
+<p>5.如果协商缓存没有命中，浏览器直接从服务器加载资源时，Last-Modified Header在重新加载的时候会被更新，下次请求时，If-Modified-Since会启用上次返回的Last-Modified值；</p>
+<p>【Last-Modified，If-Modified-Since】都是根据服务器时间返回的header，一般来说，在没有调整服务器时间和篡改客户端缓存的情况下，这两个header配合起来管理协商缓存是非常可靠的，但是有时候也会服务器上资源其实有变化，但是最后修改时间却没有变化的情况，而这种问题又很不容易被定位出来，而当这种情况出现的时候，就会影响协商缓存的可靠性。所以就有了另外一对header来管理协商缓存，这对header就是【ETag、If-None-Match】。它们的缓存管理的方式是：</p>
+<p>1.浏览器第一次跟服务器请求一个资源，服务器在返回这个资源的同时，在respone的header加上ETag的header，这个header是服务器根据当前请求的资源生成的一个唯一标识，这个唯一标识是一个字符串，只要资源有变化这个串就不同，跟最后修改时间没有关系，所以能很好的补充Last-Modified的问题：
+<img src="http://odqpd0nco.bkt.clouddn.com/blog/images/browser-cache-16.png" alt="响应头的ETag"></p>
+<p>2.浏览器再次跟服务器请求这个资源时，在request的header上加上If-None-Match的header，这个header的值就是上一次请求时返回的ETag的值:<br>
+<img src="http://odqpd0nco.bkt.clouddn.com/blog/images/browser-cache-13.png" alt="请求头的If-None-Match"></p>
+<p>3.服务器再次收到资源请求时，根据浏览器传过来If-None-Match和然后再根据资源生成一个新的ETag，如果这两个值相同就说明资源没有变化，否则就是有变化；如果没有变化则返回304 Not Modified，但是不会返回资源内容；如果有变化，就正常返回资源内容。与Last-Modified不一样的是，当服务器返回304 Not Modified的响应时，由于ETag重新生成过，response header中还会把这个ETag返回，即使这个ETag跟之前的没有变化；</p>
+<p>4.浏览器收到304的响应后，就会从缓存中加载资源。</p>
+<h3>协商缓存的管理</h3>
+<p>协商缓存跟强缓存不一样，强缓存不发请求到服务器，所以有时候资源更新了浏览器还不知道，但是协商缓存会发请求到服务器，所以资源是否更新，服务器肯定知道。大部分web服务器都默认开启协商缓存，而且是同时启用【Last-Modified，If-Modified-Since】和【ETag、If-None-Match】，比如apache:</p>
+<p><img src="http://odqpd0nco.bkt.clouddn.com/blog/images/browser-cache-17.png" alt="ETag、Last-Modified"></p>
+<p>如果没有协商缓存，每个到服务器的请求，就都得返回资源内容，这样服务器的性能会极差。</p>
+<p>【Last-Modified，If-Modified-Since】和【ETag、If-None-Match】一般都是同时启用，这是为了处理Last-Modified不可靠的情况。有一种场景需要注意：</p>
+<p>1.分布式系统里多台机器间文件的Last-Modified必须保持一致，以免负载均衡到不同机器导致比对失败；</p>
+<p>2.分布式系统尽量关闭掉ETag(每台机器生成的ETag都会不一样）；</p>
+<p>京东页面的资源请求，返回的repsones header就只有Last-Modified，没有ETag：
+<img src="http://odqpd0nco.bkt.clouddn.com/blog/images/browser-cache-19.png" alt="单独启用Last-Modified"></p>
+<p>协商缓存需要配合强缓存使用，你看前面这个截图中，除了Last-Modified这个header，还有强缓存的相关header，因为如果不启用强缓存的话，本地就不会缓存相关资源，协商缓存根本没有意义。</p>
+<h3>浏览器行为对缓存的影响</h3>
+<p>如果资源已经被浏览器缓存下来，在缓存失效之前，再次请求时，默认会先检查是否命中强缓存，如果强缓存命中则直接读取缓存，如果强缓存没有命中则发请求到服务器检查是否命中协商缓存，如果协商缓存命中，则告诉浏览器还是可以从缓存读取，否则才从服务器返回最新的资源。这是默认的处理方式，这个方式可能被浏览器的行为改变：</p>
+<p>1.当ctrlf5强制刷新网页时，直接从服务器加载，跳过强缓存和协商缓存；</p>
+<p>2.当f5刷新网页时，跳过强缓存，但是会检查协商缓存；</p>
+<p>浏览器各类操作及其对缓存的影响如下图：
+<img src="http://odqpd0nco.bkt.clouddn.com/blog/images/browser-cache-18.png" alt="浏览器行为对缓存的影响"></p>
+<h3>参考链接</h3>
+<p><a href="https://www.cnblogs.com/shixiaomiao1122/p/7591556.html" target="_blank" rel="noopener">彻底理解浏览器缓存机制</a></p>
 
         
     
@@ -595,19 +617,19 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/post/JQuery-Object-and-Dom-Object/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
-        </a>
-    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
+    
+        <a href="/post/javaScript-prototype/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
     
 </nav>
 

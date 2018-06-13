@@ -55,9 +55,7 @@
     <link rel="icon" href="http://odqpd0nco.bkt.clouddn.com/blog/images/1488003881200tmp.jpg">
 
     <meta name="format-detection" content="telephone=no"/>
-    <meta name="description" itemprop="description" content="
-
-当我们浏览电商网站时，我们通常需要通过商品的图片来了解一些细节，但是由于内容和排版的限制，电商网站展示的都是统一尺寸规格的图片，导致我们难以从小图中观察到商品的细节。为了给顾客展示更多的商品细节，电商网站都会提供一种图片放大技术用以辅助顾客对商品进行观察。本文以图片放大技术为出发点，对主流电商网站中使用的图片放大技术进行一定的分析，并结合自身的技术积累提供了几种实现思路。">
+    <meta name="description" itemprop="description" content="a blog for coding and life">
     <meta name="keywords" content="xzillion,JavaScript">
     <meta name="theme-color" content="#0097A7">
 
@@ -242,9 +240,7 @@
     <meta property="og:type" content="blog">
     <meta property="og:title" content="图片放大镜的分析与实现 | Xzillion&#39;s Blog">
     <meta property="og:image" content="http://odqpd0nco.bkt.clouddn.com/blog/images/1488003881200tmp.jpg">
-    <meta property="og:description" content="
-
-当我们浏览电商网站时，我们通常需要通过商品的图片来了解一些细节，但是由于内容和排版的限制，电商网站展示的都是统一尺寸规格的图片，导致我们难以从小图中观察到商品的细节。为了给顾客展示更多的商品细节，电商网站都会提供一种图片放大技术用以辅助顾客对商品进行观察。本文以图片放大技术为出发点，对主流电商网站中使用的图片放大技术进行一定的分析，并结合自身的技术积累提供了几种实现思路。">
+    <meta property="og:description" content="a blog for coding and life">
     <meta property="og:article:tag" content="JavaScript"> 
 
     
@@ -291,9 +287,7 @@
         }
     },
     "keywords": ",JavaScriptxzillion",
-    "description": "
-
-当我们浏览电商网站时，我们通常需要通过商品的图片来了解一些细节，但是由于内容和排版的限制，电商网站展示的都是统一尺寸规格的图片，导致我们难以从小图中观察到商品的细节。为了给顾客展示更多的商品细节，电商网站都会提供一种图片放大技术用以辅助顾客对商品进行观察。本文以图片放大技术为出发点，对主流电商网站中使用的图片放大技术进行一定的分析，并结合自身的技术积累提供了几种实现思路。",
+    "description": "a blog for coding and life",
 }
 </script>
 
@@ -362,7 +356,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#主流电商网站关于图片放大技术的实现和分析"><span class="post-toc-number">1.</span> <span class="post-toc-text">主流电商网站关于图片放大技术的实现和分析</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-淘宝图片放大技术的实现"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">1 淘宝图片放大技术的实现</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-京东图片放大技术的实现"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">2 京东图片放大技术的实现</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3-如何实现？"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">3 如何实现？</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#图片放大技术的几种实现思路"><span class="post-toc-number">2.</span> <span class="post-toc-text">图片放大技术的几种实现思路</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-借助css-background-position属性实现图片放大"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">1 借助css background-position属性实现图片放大</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-借助canvas-drawImage实现图片的放大"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">2 借助canvas drawImage实现图片的放大</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3-利用svg-viewBox属性实现图片放大"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">3 利用svg viewBox属性实现图片放大</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一些链接"><span class="post-toc-number">3.</span> <span class="post-toc-text">一些链接</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">1.</span> <span class="post-toc-text">主流电商网站关于图片放大技术的实现和分析</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">1 淘宝图片放大技术的实现</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">2 京东图片放大技术的实现</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">3 如何实现？</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">2.</span> <span class="post-toc-text">图片放大技术的几种实现思路</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">1 借助css background-position属性实现图片放大</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">2 借助canvas drawImage实现图片的放大</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">3 利用svg viewBox属性实现图片放大</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">3.</span> <span class="post-toc-text">一些链接</span></a></li></ol>
     </ul>
     
 
@@ -511,25 +505,35 @@
     
         <p><img src="http://odqpd0nco.bkt.clouddn.com/blog/images/imageZoom.jpg" alt="放大器"></p>
 <blockquote>
-<p>当我们浏览电商网站时，我们通常需要通过商品的图片来了解一些细节，但是由于内容和排版的限制，电商网站展示的都是统一尺寸规格的图片，导致我们难以从小图中观察到商品的细节。为了给顾客展示更多的商品细节，电商网站都会提供一种图片放大技术用以辅助顾客对商品进行观察。本文以图片放大技术为出发点，对主流电商网站中使用的图片放大技术进行一定的分析，并结合自身的技术积累提供了几种实现思路。<br><a id="more"></a></p>
+<p>当我们浏览电商网站时，我们通常需要通过商品的图片来了解一些细节，但是由于内容和排版的限制，电商网站展示的都是统一尺寸规格的图片，导致我们难以从小图中观察到商品的细节。为了给顾客展示更多的商品细节，电商网站都会提供一种图片放大技术用以辅助顾客对商品进行观察。本文以图片放大技术为出发点，对主流电商网站中使用的图片放大技术进行一定的分析，并结合自身的技术积累提供了几种实现思路。
+&lt;!--more--&gt;</p>
 </blockquote>
-<h3 id="主流电商网站关于图片放大技术的实现和分析"><a href="#主流电商网站关于图片放大技术的实现和分析" class="headerlink" title="主流电商网站关于图片放大技术的实现和分析"></a>主流电商网站关于图片放大技术的实现和分析</h3><h4 id="1-淘宝图片放大技术的实现"><a href="#1-淘宝图片放大技术的实现" class="headerlink" title="1 淘宝图片放大技术的实现"></a>1 淘宝图片放大技术的实现</h4><p><img src="http://odqpd0nco.bkt.clouddn.com/blog/images/%E6%B7%98%E5%AE%9D%E5%9B%BE%E7%89%87%E6%94%BE%E5%A4%A7.png" alt="淘宝图片放大技术的实现"><br>通过简单的分析，我们可以看到这段代码里引入了一个名为imageZoom的图片处理库，该库通过监听鼠标事件对图片进行取样，并对该样本进行放大，最终将放大的样本插入到页面对应的位置。</p>
-<h4 id="2-京东图片放大技术的实现"><a href="#2-京东图片放大技术的实现" class="headerlink" title="2 京东图片放大技术的实现"></a>2 京东图片放大技术的实现</h4><p><img src="http://odqpd0nco.bkt.clouddn.com/blog/images/%E4%BA%AC%E4%B8%9C%E5%9B%BE%E7%89%87%E6%94%BE%E5%A4%A7.png" alt="京东图片放大技术的实现"><br>京东的这段代码中引入了名为jqZoom的jquery插件库，该库的实现原理与imageZoom相似，动态抓取图片样本，将放大的样本插入到页面对应的位置。</p>
-<h4 id="3-如何实现？"><a href="#3-如何实现？" class="headerlink" title="3 如何实现？"></a>3 如何实现？</h4><p>结合主流电商网站的代码实现，可以得出图片放大功能需要具备以下几点要求：</p>
+<h3>主流电商网站关于图片放大技术的实现和分析</h3>
+<h4>1 淘宝图片放大技术的实现</h4>
+<p><img src="http://odqpd0nco.bkt.clouddn.com/blog/images/%E6%B7%98%E5%AE%9D%E5%9B%BE%E7%89%87%E6%94%BE%E5%A4%A7.png" alt="淘宝图片放大技术的实现">
+通过简单的分析，我们可以看到这段代码里引入了一个名为imageZoom的图片处理库，该库通过监听鼠标事件对图片进行取样，并对该样本进行放大，最终将放大的样本插入到页面对应的位置。</p>
+<h4>2 京东图片放大技术的实现</h4>
+<p><img src="http://odqpd0nco.bkt.clouddn.com/blog/images/%E4%BA%AC%E4%B8%9C%E5%9B%BE%E7%89%87%E6%94%BE%E5%A4%A7.png" alt="京东图片放大技术的实现">
+京东的这段代码中引入了名为jqZoom的jquery插件库，该库的实现原理与imageZoom相似，动态抓取图片样本，将放大的样本插入到页面对应的位置。</p>
+<h4>3 如何实现？</h4>
+<p>结合主流电商网站的代码实现，可以得出图片放大功能需要具备以下几点要求：</p>
 <ul>
 <li>动态获取图片样本</li>
 <li>对样本进行放大</li>
 <li>将放大后的样本插入到页面</li>
 </ul>
-<h3 id="图片放大技术的几种实现思路"><a href="#图片放大技术的几种实现思路" class="headerlink" title="图片放大技术的几种实现思路"></a>图片放大技术的几种实现思路</h3><h4 id="1-借助css-background-position属性实现图片放大"><a href="#1-借助css-background-position属性实现图片放大" class="headerlink" title="1 借助css background-position属性实现图片放大"></a>1 借助css background-position属性实现图片放大</h4><p>css 的 background 主要有一下几个属性</p>
-<pre><code class="$xslt">{
+<h3>图片放大技术的几种实现思路</h3>
+<h4>1 借助css background-position属性实现图片放大</h4>
+<p>css 的 background 主要有一下几个属性</p>
+<pre><code class="language-$xslt">{
     background-image: url(&quot;a.png&quot;);//图片路径
     background-repeat: no-repeat;//如何重复展示图片
     background-size: 100px 200px ;//图片的大小
     background-position: center;//图片要显示的起始位置
 }
 </code></pre>
-<p>其中 background-position 属性可以设置具体的像素值，即相对于图片左上角的坐标值（以负数表示），用于选取图片的一部分进行展示，图示如下。<br><img src="http://odqpd0nco.bkt.clouddn.com/blog/images/csspostiion.png" alt="css background-position的用法图解"></p>
+<p>其中 background-position 属性可以设置具体的像素值，即相对于图片左上角的坐标值（以负数表示），用于选取图片的一部分进行展示，图示如下。
+<img src="http://odqpd0nco.bkt.clouddn.com/blog/images/csspostiion.png" alt="css background-position的用法图解"></p>
 <p>雪碧图是background-position属性的一种经典实现。雪碧图是指将网页中用到的所有图标按照约定的尺寸和间距合成为一整张大图，前端网页在获取图片时，通过background-position属性截取对应位置的图标用于显示。雪碧图主要的优点是降低了网页的资源请求次数，提高了网页的解析速度。</p>
 <p>利用background-position属性实现图片放大的过程如下：</p>
 <ul>
@@ -539,10 +543,10 @@
 <li>根据尺寸关系m将样本坐标映射到大图上</li>
 <li>将映射完成的坐标设置为放大器容器的background-position值</li>
 </ul>
-<pre><code class="$xslt">&lt;h1&gt;借助css background-position属性实现图片放大&lt;/h1&gt;
+<pre><code class="language-$xslt">&lt;h1&gt;借助css background-position属性实现图片放大&lt;/h1&gt;
 &lt;div&gt;
     &lt;img id=&quot;solution-1-source&quot; src=&quot;images/food2.jpg&quot; style=&quot;cursor: zoom-in&quot;/&gt;
-    &lt;div id=&quot;solution-1-target&quot; style=&quot;display: none; background: url(&#39;images/food2.jpg&#39;) no-repeat;&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;solution-1-target&quot; style=&quot;display: none; background: url('images/food2.jpg') no-repeat;&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;script&gt;
     const ZOOM_BASE_NUM = 4;//放大倍数
@@ -579,21 +583,22 @@
 <ul>
 <li>图片必须足够大，否则不利于展示</li>
 </ul>
-<h4 id="2-借助canvas-drawImage实现图片的放大"><a href="#2-借助canvas-drawImage实现图片的放大" class="headerlink" title="2 借助canvas drawImage实现图片的放大"></a>2 借助canvas drawImage实现图片的放大</h4><p>canvas 是 html5 引入的图像绘制API。通过canvas容器和js脚本，我们可以实现静态图像的绘制和动态画面的生成，canvas正被大量运用于图像处理和游戏制作领域。</p>
+<h4>2 借助canvas drawImage实现图片的放大</h4>
+<p>canvas 是 html5 引入的图像绘制API。通过canvas容器和js脚本，我们可以实现静态图像的绘制和动态画面的生成，canvas正被大量运用于图像处理和游戏制作领域。</p>
 <p>canvas 针对图片处理的API drawImage的主要用法如下：</p>
-<pre><code class="$xslt">context.drawImage(img,x,y);//在画布上定位图像
+<pre><code class="language-$xslt">context.drawImage(img,x,y);//在画布上定位图像
 context.drawImage(img,x,y,width,height);//在画布上定位图像，并规定图像的宽度和高度
 context.drawImage(img,sx,sy,swidth,sheight,x,y,width,height);//剪切图像，并在画布上定位被剪切的部分
 
-/*img    规定要使用的图像、画布或视频。     
-sx        可选。开始剪切的 x 坐标位置。
-sy        可选。开始剪切的 y 坐标位置。
-swidth    可选。被剪切图像的宽度。
-sheight    可选。被剪切图像的高度。
-x        在画布上放置图像的 x 坐标位置。
-y        在画布上放置图像的 y 坐标位置。
-width    可选。要使用的图像的宽度（伸展或缩小图像）。
-height    可选。要使用的图像的高度（伸展或缩小图像）。
+/*img	规定要使用的图像、画布或视频。	 
+sx	    可选。开始剪切的 x 坐标位置。
+sy	    可选。开始剪切的 y 坐标位置。
+swidth	可选。被剪切图像的宽度。
+sheight	可选。被剪切图像的高度。
+x	    在画布上放置图像的 x 坐标位置。
+y	    在画布上放置图像的 y 坐标位置。
+width	可选。要使用的图像的宽度（伸展或缩小图像）。
+height	可选。要使用的图像的高度（伸展或缩小图像）。
 */
 </code></pre>
 <p>借助drawImage的第三个方法，我们可以通过以下过程实现图片的放大：</p>
@@ -603,28 +608,29 @@ height    可选。要使用的图像的高度（伸展或缩小图像）。
 <li>约定图片放大倍数和取样范围</li>
 <li>监听鼠标事件获取取样点坐标</li>
 <li>清空画布对象</li>
-<li>根据放大倍数、取样范围和取样点坐标在画布上绘制放大后的样本<pre><code class="$xslt">&lt;h1&gt;借助cavans drawImage实现图片的放大&lt;/h1&gt;
+<li>根据放大倍数、取样范围和取样点坐标在画布上绘制放大后的样本</li>
+</ul>
+<pre><code class="language-$xslt">&lt;h1&gt;借助cavans drawImage实现图片的放大&lt;/h1&gt;
 &lt;div&gt;
-  &lt;img id=&quot;solution-2-source&quot; src=&quot;images/food1.jpg&quot; style=&quot; cursor: zoom-in&quot;&gt;
-  &lt;canvas id=&quot;solution-2-target&quot;&gt;&lt;/canvas&gt;
+    &lt;img id=&quot;solution-2-source&quot; src=&quot;images/food1.jpg&quot; style=&quot; cursor: zoom-in&quot;&gt;
+    &lt;canvas id=&quot;solution-2-target&quot;&gt;&lt;/canvas&gt;
 &lt;/div&gt;
 &lt;script&gt;
-  /*利用canvas drawImage实现图片的放大*/
-      let solution_2_source = document.getElementById(&quot;solution-2-source&quot;);
-      let solution_2_target = document.getElementById(&quot;solution-2-target&quot;);
-      solution_2_target.width = POINT_SIZE * ZOOM_BASE_NUM ;//根据放大倍数和扩散范围配置放大器的大小
-      solution_2_target.height = POINT_SIZE * ZOOM_BASE_NUM;
-      let canvasCtx = solution_2_target.getContext(&quot;2d&quot;);//获取canvas画布对象
-      solution_2_source.addEventListener(&quot;mousemove&quot;, (event) =&gt; {
-          canvasCtx.clearRect(0, 0, POINT_SIZE * ZOOM_BASE_NUM,  POINT_SIZE * ZOOM_BASE_NUM);//清空画布
-          let event_x = event.offsetX;
-          let event_y = event.offsetY;
-          canvasCtx.drawImage(solution_2_source, event_x -  POINT_SIZE/ 2, event_y - POINT_SIZE / 2, POINT_SIZE, POINT_SIZE, 0, 0, POINT_SIZE * ZOOM_BASE_NUM, POINT_SIZE * ZOOM_BASE_NUM);
-      })
+    /*利用canvas drawImage实现图片的放大*/
+        let solution_2_source = document.getElementById(&quot;solution-2-source&quot;);
+        let solution_2_target = document.getElementById(&quot;solution-2-target&quot;);
+        solution_2_target.width = POINT_SIZE * ZOOM_BASE_NUM ;//根据放大倍数和扩散范围配置放大器的大小
+        solution_2_target.height = POINT_SIZE * ZOOM_BASE_NUM;
+        let canvasCtx = solution_2_target.getContext(&quot;2d&quot;);//获取canvas画布对象
+        solution_2_source.addEventListener(&quot;mousemove&quot;, (event) =&gt; {
+            canvasCtx.clearRect(0, 0, POINT_SIZE * ZOOM_BASE_NUM,  POINT_SIZE * ZOOM_BASE_NUM);//清空画布
+            let event_x = event.offsetX;
+            let event_y = event.offsetY;
+            canvasCtx.drawImage(solution_2_source, event_x -  POINT_SIZE/ 2, event_y - POINT_SIZE / 2, POINT_SIZE, POINT_SIZE, 0, 0, POINT_SIZE * ZOOM_BASE_NUM, POINT_SIZE * ZOOM_BASE_NUM);
+        })
 &lt;/script&gt;
 </code></pre>
-此种实现方式的优点和缺点：</li>
-</ul>
+<p>此种实现方式的优点和缺点：</p>
 <p>优点</p>
 <ul>
 <li>代码量最少，逻辑超简单</li>
@@ -635,9 +641,10 @@ height    可选。要使用的图像的高度（伸展或缩小图像）。
 <li>图片尺寸没有要求，但是要足够清晰，否则放大后容易模糊</li>
 <li>兼容性不够好，可以放弃ie了</li>
 </ul>
-<h4 id="3-利用svg-viewBox属性实现图片放大"><a href="#3-利用svg-viewBox属性实现图片放大" class="headerlink" title="3 利用svg viewBox属性实现图片放大"></a>3 利用svg viewBox属性实现图片放大</h4><p>SVG是一种基于可拓展标记语言实现的可缩放矢量图形，主要用于描述二维层面的矢量图形。类似于html和xml等标记语言，SVG通过属性和不同层级的标签描述对象，包括图片，文字，颜色，动画。</p>
+<h4>3 利用svg viewBox属性实现图片放大</h4>
+<p>SVG是一种基于可拓展标记语言实现的可缩放矢量图形，主要用于描述二维层面的矢量图形。类似于html和xml等标记语言，SVG通过属性和不同层级的标签描述对象，包括图片，文字，颜色，动画。</p>
 <p>SVG中用于图片展示的属性viewBox的用法如下：</p>
-<pre><code class="$xslt">//viewBox中的x y是指svg显示对象的起点坐标，width height指的是要显示对象的样本大小
+<pre><code class="language-$xslt">//viewBox中的x y是指svg显示对象的起点坐标，width height指的是要显示对象的样本大小
 //svg的width height是指整个svg图像的大小，也就是最终样本的显示大小
  &lt;svg  id=&quot;solution-3-target&quot; version=&quot;1.0&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;  x=&quot;0px&quot; y=&quot;0px&quot; width=&quot;&quot; height=&quot;&quot; viewBox=&quot;x y width height&quot;&gt;
         &lt;image xlink:href=&quot;images/food1.jpg&quot; x=&quot;0px&quot; y=&quot;0px&quot;&gt;&lt;/image&gt;
@@ -652,32 +659,33 @@ height    可选。要使用的图像的高度（伸展或缩小图像）。
 <li>根据放大倍数和取样范围设置svg的显示范围</li>
 <li>将内置image对象的尺寸设置为原图的尺寸</li>
 <li>监听鼠标事件获取取样点坐标</li>
-<li>根据取样点坐标和取样范围动态设置svg的viewBox属性值<pre><code class="$xslt">&lt;h1&gt;借助svg viewBox属性实现图片放大&lt;/h1&gt;
+<li>根据取样点坐标和取样范围动态设置svg的viewBox属性值</li>
+</ul>
+<pre><code class="language-$xslt">&lt;h1&gt;借助svg viewBox属性实现图片放大&lt;/h1&gt;
 &lt;div&gt;
-  &lt;img id=&quot;solution-3-source&quot; src=&quot;images/food1.jpg&quot; style=&quot;cursor: zoom-in&quot;&gt;
-  &lt;svg  id=&quot;solution-3-target&quot; version=&quot;1.0&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;  x=&quot;0px&quot; y=&quot;0px&quot;&gt;
-      &lt;image xlink:href=&quot;images/food1.jpg&quot; x=&quot;0px&quot; y=&quot;0px&quot;&gt;&lt;/image&gt;
-  &lt;/svg&gt;
+    &lt;img id=&quot;solution-3-source&quot; src=&quot;images/food1.jpg&quot; style=&quot;cursor: zoom-in&quot;&gt;
+    &lt;svg  id=&quot;solution-3-target&quot; version=&quot;1.0&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;  x=&quot;0px&quot; y=&quot;0px&quot;&gt;
+        &lt;image xlink:href=&quot;images/food1.jpg&quot; x=&quot;0px&quot; y=&quot;0px&quot;&gt;&lt;/image&gt;
+    &lt;/svg&gt;
 &lt;/div&gt;
 &lt;script&gt;
-   /*利用svg viewBox属性实现图片放大*/
-      let solution_3_source = document.getElementById(&quot;solution-3-source&quot;);
-      let solution_3_target = document.getElementById(&quot;solution-3-target&quot;);
-      solution_3_target.setAttribute(&quot;width&quot;, POINT_SIZE * ZOOM_BASE_NUM + &quot;px&quot;);//根据放大倍数和扩散范围配置放大器容器大小
-      solution_3_target.setAttribute(&quot;height&quot;, POINT_SIZE * ZOOM_BASE_NUM + &quot;px&quot;);
-      solution_3_source.onload = ()=&gt;{
-          solution_3_target.children[0].setAttribute(&quot;width&quot;, solution_3_source.width + &quot;px&quot;);//原图尺寸和svg内待取样image元素的尺寸必须一致，否则会导致取样点偏移
-          solution_3_target.children[0].setAttribute(&quot;height&quot;, solution_3_source.height + &quot;px&quot;);
-      }
-      solution_3_source.addEventListener(&quot;mousemove&quot;, (event)=&gt;{
-          let event_x = event.offsetX;
-          let event_y = event.offsetY;
-          solution_3_target.setAttribute(&quot;viewBox&quot;, &quot;&quot; + (event_x - POINT_SIZE/2) + &quot; &quot; + (event_y - POINT_SIZE/2) + &quot; &quot; +POINT_SIZE + &quot; &quot; +POINT_SIZE);
-      })
+     /*利用svg viewBox属性实现图片放大*/
+        let solution_3_source = document.getElementById(&quot;solution-3-source&quot;);
+        let solution_3_target = document.getElementById(&quot;solution-3-target&quot;);
+        solution_3_target.setAttribute(&quot;width&quot;, POINT_SIZE * ZOOM_BASE_NUM + &quot;px&quot;);//根据放大倍数和扩散范围配置放大器容器大小
+        solution_3_target.setAttribute(&quot;height&quot;, POINT_SIZE * ZOOM_BASE_NUM + &quot;px&quot;);
+        solution_3_source.onload = ()=&gt;{
+            solution_3_target.children[0].setAttribute(&quot;width&quot;, solution_3_source.width + &quot;px&quot;);//原图尺寸和svg内待取样image元素的尺寸必须一致，否则会导致取样点偏移
+            solution_3_target.children[0].setAttribute(&quot;height&quot;, solution_3_source.height + &quot;px&quot;);
+        }
+        solution_3_source.addEventListener(&quot;mousemove&quot;, (event)=&gt;{
+            let event_x = event.offsetX;
+            let event_y = event.offsetY;
+            solution_3_target.setAttribute(&quot;viewBox&quot;, &quot;&quot; + (event_x - POINT_SIZE/2) + &quot; &quot; + (event_y - POINT_SIZE/2) + &quot; &quot; +POINT_SIZE + &quot; &quot; +POINT_SIZE);
+        })
 &lt;/script&gt;
 </code></pre>
-此种实现方式的优点和缺点：</li>
-</ul>
+<p>此种实现方式的优点和缺点：</p>
 <p>优点</p>
 <ul>
 <li>代码量较少，逻辑简单</li>
@@ -689,7 +697,8 @@ height    可选。要使用的图像的高度（伸展或缩小图像）。
 <ul>
 <li>图片尺寸没有要求，但是要足够清晰，否则放大后容易模糊</li>
 </ul>
-<h3 id="一些链接"><a href="#一些链接" class="headerlink" title="一些链接"></a>一些链接</h3><ul>
+<h3>一些链接</h3>
+<ul>
 <li><a href="http://blog.bestxz.cn/frontTec/ImageZoom.html">图片放大器的几种实现方式</a></li>
 <li><a href="http://www.cnblogs.com/zgqys1980/p/4308434.html" target="_blank" rel="noopener">css background-position的用法</a></li>
 <li><a href="http://www.runoob.com/tags/canvas-drawimage.html" target="_blank" rel="noopener">html5 canvas drawImage的用法</a></li>
@@ -821,7 +830,7 @@ height    可选。要使用的图像的高度（伸展或缩小图像）。
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2018/06/">六月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/05/">五月 2018<span class="sidebar_archives-count">3</span></a>
+                <a class="sidebar_archives-link" href="/archives/2018/06/">六月 2018<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/05/">五月 2018<span class="sidebar_archives-count">3</span></a>
             </ul>
         </li>
         
@@ -839,7 +848,7 @@ height    可选。要使用的图像的高度（伸展或缩小图像）。
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/技术之光/">技术之光<span class="sidebar_archives-count">6</span></a>
+                <a class="sidebar_archives-link" href="/categories/技术之光/">技术之光<span class="sidebar_archives-count">7</span></a>
             </ul>
         </li>
         
@@ -863,7 +872,7 @@ height    可选。要使用的图像的高度（伸展或缩小图像）。
         <li>
             <a href="/archives">
                 文章总数
-                <span class="sidebar-badge">6</span>
+                <span class="sidebar-badge">7</span>
             </a>
         </li>
         
