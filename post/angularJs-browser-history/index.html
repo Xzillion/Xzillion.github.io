@@ -56,7 +56,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="a blog for coding and life">
-    <meta name="keywords" content="xzillion,angularJs,JavaScript,Web">
+    <meta name="keywords" content="xzillion,JavaScript,angularJs,Web">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -241,11 +241,11 @@
     <meta property="og:title" content="angularJs应用如何去除路径上的#号？ | Xzillion&#39;s Blog">
     <meta property="og:image" content="http://odqpd0nco.bkt.clouddn.com/blog/images/1488003881200tmp.jpg">
     <meta property="og:description" content="a blog for coding and life">
-    <meta property="og:article:tag" content="angularJs"> <meta property="og:article:tag" content="JavaScript"> <meta property="og:article:tag" content="Web"> 
+    <meta property="og:article:tag" content="JavaScript"> <meta property="og:article:tag" content="angularJs"> <meta property="og:article:tag" content="Web"> 
 
     
         <meta property="article:published_time" content="Thu May 10 2018 09:02:58 GMT+0800">
-        <meta property="article:modified_time" content="Tue Jun 12 2018 23:07:32 GMT+0800">
+        <meta property="article:modified_time" content="Thu Jun 14 2018 02:15:02 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -268,7 +268,7 @@
     "mainEntityOfPage": "https://blog.bestxz.cn/post/angularJs-browser-history/index.html",
     "headline": "angularJs应用如何去除路径上的#号？",
     "datePublished": "Thu May 10 2018 09:02:58 GMT+0800",
-    "dateModified": "Tue Jun 12 2018 23:07:32 GMT+0800",
+    "dateModified": "Thu Jun 14 2018 02:15:02 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Xzillion",
@@ -286,7 +286,7 @@
             "url": "http://odqpd0nco.bkt.clouddn.com/blog/images/1488003881200tmp.jpg"
         }
     },
-    "keywords": ",angularJs,JavaScript,Webxzillion",
+    "keywords": ",JavaScript,angularJs,Webxzillion",
     "description": "a blog for coding and life",
 }
 </script>
@@ -504,8 +504,7 @@
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
         <blockquote>
-<p>作为强迫症晚期患者，当然不能容许#号的存在。
-&lt;!--more--&gt;</p>
+<p>作为强迫症晚期患者，当然不能容许#号的存在。</p>
 </blockquote>
 <h3>1 为什么angularJs应用路径上会存在#号？</h3>
 <p>AngularJS是单页应用，一个ng-app对应一个页面，一个URL。AngularJS实现了自己的前端路由，让一个ng-app可以管理多个URL，再对应到多个ng-vew上面。当我们去访问URL的时候，浏览器会向服务器发送request请求，若此时服务器端不存在该请求对应的文件资源，则会抛出404错误，为了解决这一问题，angularJs默认在访问路径中添加#号，使得浏览器不向服务器发送请求，转而由自带的router处理，这样就不会出现404报错问题。在reactJs框架中也存在类似的概念（hashHistory和browserHistory）。</p>
