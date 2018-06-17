@@ -45,7 +45,7 @@
     
     <title>
         
-            标签: JQuery | 
+            javaScript中的闭包 | 
         
         Xzillion&#39;s Blog
     </title>
@@ -55,8 +55,8 @@
     <link rel="icon" href="http://odqpd0nco.bkt.clouddn.com/blog/images/1488003881200tmp.jpg">
 
     <meta name="format-detection" content="telephone=no"/>
-    <meta name="description" itemprop="description" content="a blog for coding and life">
-    <meta name="keywords" content="xzillion">
+    <meta name="description" itemprop="description" content="敲黑板的重点">
+    <meta name="keywords" content="xzillion,JavaScript,闭包">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -217,7 +217,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Xzillion&#39;s Blog">
-    <meta name="msapplication-starturl" content="https://blog.bestxz.cn/tags/JQuery/">
+    <meta name="msapplication-starturl" content="https://blog.bestxz.cn/post/javaScript-closure/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Xzillion&#39;s Blog">
@@ -236,13 +236,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="https://blog.bestxz.cn/tags/JQuery/">
+    <meta property="og:url" content="https://blog.bestxz.cn/post/javaScript-closure/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="标签: JQuery | Xzillion&#39;s Blog">
+    <meta property="og:title" content="javaScript中的闭包 | Xzillion&#39;s Blog">
     <meta property="og:image" content="http://odqpd0nco.bkt.clouddn.com/blog/images/1488003881200tmp.jpg">
-    <meta property="og:description" content="a blog for coding and life">
-    
+    <meta property="og:description" content="敲黑板的重点">
+    <meta property="og:article:tag" content="JavaScript"> <meta property="og:article:tag" content="闭包"> 
 
+    
+        <meta property="article:published_time" content="Sun Jun 17 2018 23:48:00 GMT+0800">
+        <meta property="article:modified_time" content="Mon Jun 18 2018 00:51:48 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -250,13 +253,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://blog.bestxz.cn/tags/JQuery/index.html" />
+        <link rel="canonical" href="https://blog.bestxz.cn/post/javaScript-closure/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://blog.bestxz.cn/post/javaScript-closure/index.html",
+    "headline": "javaScript中的闭包",
+    "datePublished": "Sun Jun 17 2018 23:48:00 GMT+0800",
+    "dateModified": "Mon Jun 18 2018 00:51:48 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "Xzillion",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://odqpd0nco.bkt.clouddn.com/blog/images/1488003881200tmp.jpg"
+        },
+        "description": "逐梦者 筑梦者"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Xzillion&#39;s Blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "http://odqpd0nco.bkt.clouddn.com/blog/images/1488003881200tmp.jpg"
+        }
+    },
+    "keywords": ",JavaScript,闭包xzillion",
+    "description": "敲黑板的重点",
+}
+</script>
 
 
     
@@ -294,97 +327,338 @@
         </a>
         
 
-         <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+        <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">1.</span> <span class="post-toc-text">1.关于静态作用域和动态作用域</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">2.</span> <span class="post-toc-text">2.闭包的概念</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">3.</span> <span class="post-toc-text">3.闭包的用途</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">4.</span> <span class="post-toc-text">3.参考链接</span></a></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="http://odqpd0nco.bkt.clouddn.com/blog/images/js_object.png">
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://odqpd0nco.bkt.clouddn.com/blog/images/javaScript-closure.jpg)">
+    
+            <p class="article-headline-p">
+                javaScript中的闭包
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="http://odqpd0nco.bkt.clouddn.com/blog/images/1488003881200tmp.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Xzillion</strong>
+        <span>6月 17, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACX0lEQVR42u3aW25rMQgF0Mx/0vdOoHE34JCjavmr6sNhuZKNgNe/P71eeHh4eHh4eHh4D+O94pX8/g8fVtx5EhseHh7eJu+Xq/YN7xzWeZ93O09iw8PDw9vnVa/s/BlIQjx/biE2PDw8vIfxzlvn1/c73oWjx8PDw3sYr1xUPZYYkvQdDw8P78m8Xoh5QOeicO/hwcPDw/sWr9em2vn6C/09PDw8vCNvkiLnJYakEJyXfX+JEA8PD+/DvCTBzcsH1TZYckB5tHh4eHg7vMmlnFzuvUHY6nfw8PDwNnlJ4ltd87GAvPWFh4eHt8/LqTvpcnIQhQYYHh4e3iIvHxTIBwjy9L1aEMHDw8Pb5PU+Ji+2Vkse1Xjw8PDw9nnVVlZStL2ViPeeBzw8PLwdXl6WTYLIr/hbRWE8PDy8TV6vcDAfNeiNEUQHh4eHh/dh3t2iQBL0LTAeHh7ed3m9ple14Ds5ynx/PDw8vH1eUg6YhFIdNUj+AXh4eHj7vOrW+dBAfljV32mODuDh4eGNedVG14Q0KVUkpRA8PDy8HV61qNoLNx/Yyv+qmVLj4eHhXeIlaWt1JKv606UGGB4eHt6Yl8PuNqvyRyhP+vHw8PB2eNVVLSVMBq3yxwYPDw9vk1e9lBNYr8E2eZDw8PDw9nlJWJNCQ/7MJDuX+3t4eHh4H+P10uVJiNV1jhMPDw/vmbxeWpyUJJJnKRpKwMPDw3swLw+rmihX22l4eHh43+JNrub8OHrlhguTEXh4eHhXedVCQF6kyK/43s4f6e/h4eHhHXl/b+Hh4eHh4eHh4T1g/Qf1RMRwlsYg+gAAAABJRU5ErkJggg==">
+    
+</ul>
+
     
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/post/JQuery-Object-and-Dom-Object/">JQuery对象和Dom对象</a></p>
-    </div>
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/JavaScript/">JavaScript</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/闭包/">闭包</a>
+    </ul>
+    
 
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-了解一下基本的概念。
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/post/JQuery-Object-and-Dom-Object/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="http://odqpd0nco.bkt.clouddn.com/blog/images/1488003881200tmp.jpg" width="44px" height="44px" alt="Xzillion's avatar">
-            </div>
-            <div>
-                <strong>Xzillion</strong>
-                <span>5月 12, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/技术之光/">技术之光</a>
-              </span>
-            
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
 
-            
+    
 
-            
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=javaScript中的闭包&url=https://blog.bestxz.cn/post/javaScript-closure/index.html&pic=https://blog.bestxz.cnhttp://odqpd0nco.bkt.clouddn.com/blog/images/1488003881200tmp.jpg&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
 
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=javaScript中的闭包&url=https://blog.bestxz.cn/post/javaScript-closure/index.html&via=Xzillion" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.bestxz.cn/post/javaScript-closure/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://blog.bestxz.cn/post/javaScript-closure/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
 </div>
 
-            
-            
-        
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
-    $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
+        <blockquote>
+<p>敲黑板的重点
+<a id="more"></a></p>
+</blockquote>
+<h3>1.关于静态作用域和动态作用域</h3>
+<ul>
+<li>静态作用域
+也称为词法作用域，指作用域在词法解析阶段既确定了，不会改变。<strong>词法作用域的函数中遇到既不是形参也不是函数内部定义的局部变量的变量时，去函数定义时的环境中查询。</strong></li>
+</ul>
+<pre><code class="language-js">function a() {
+    console.log(c)
+}
+function b() {
+    var c = 2;
+    a();
+}
+var c = 1
+b()// 输出1
+</code></pre>
+<ul>
+<li>动态作用域
+动态作用域是指作用域在发生调用时决定，其作用域随着调用的环境动态改变。<strong>动态域的函数中遇到既不是形参也不是函数内部定义的局部变量的变量时，到函数调用时的环境中查。</strong></li>
+</ul>
+<pre><code class="language-js">function a() {
+    print(c)
+}
+function b() {
+    var c = 2;
+    a();
+}
+var c = 1
+b()// 输出2
+</code></pre>
+<p>词法作用域关注函数在何处声明，而动态作用域关注函数从何处调用，其作用域链是基于运行时的调用栈的。
+<strong>大多数现在程序设计语言都是采用静态作用域规则，而只有为数不多的几种语言采用动态作用域规则，采用动态作用域的语言在编写程序时容易出错。</strong></p>
+<h3>2.闭包的概念</h3>
+<ul>
+<li>《JavaScript权威指南》：函数对象可以通过作用域链互相关联起来,函数体内部的变量都可以保存在函数作用域内,这种特性在计算机科学中成为闭包</li>
+<li>《JavaScript权威指南》：闭包是指有权访问另一个函数作用域中的变量的函数。</li>
+<li>《JavaScript忍者秘籍》：闭包是一个函数在创建时允许该自身函数访问并操作该自身函数以外的变量时所创建的作用域。</li>
+<li>《你不知道的JavaScript》：闭包是基于词法作用域书写代码时所产生的自然结果。当函数记住并访问所在的词法作用域，闭包就产生了。</li>
+</ul>
+<p>综上所述，闭包就是一个函数，一个可以访问其他函数内部变量的函数，即函数中的函数。得益于javaScript的静态作用域规则，函数在被调用时访问到的是我们在定义时的作用域。
+常见的闭包形式可以概括为a函数嵌套了b函数，a函数将b函数对外暴露（返回b函数），我们在其他地方执行a函数的返回值（即b函数）时，仍然可以访问到a函数的作用域内部的值。</p>
+<p>一个实质性的例子</p>
+<pre><code class="language-js">function outer() {
+  var a = 2;
+  function inner() {
+    console.log(a);
+  }
+  return inner;
+}
+var neal = outer();
+neal();//
+</code></pre>
+<p>抛开闭包的概念，当代码执行到var neal = outer();时，outer()函数已经执行完成，其内部的作用域应当被销毁并回收，调用返回的函数neal()时将无法获取outer中的值a。
+而闭包的神奇之处在于它可以阻止垃圾回收机制的发生，本质上是由于inner函数在静态作用域下获取了变量a的引用，导致outer作用域内的a能够一直被访问且不被回收，这个引用就被叫做闭包。</p>
+<p>函数在定义时的词法作用域以外的地方被调用，闭包使得函数可以继续访问定义时的词法作用域。</p>
+<h3>3.闭包的用途</h3>
+<ul>
+<li>值的缓存</li>
+</ul>
+<p>设想我们有一个处理过程很耗时的函数对象，每次调用都会花费很长时间，
+那么我们就需要将计算出来的值存储起来，当调用这个函数的时候，首先在缓存中查找，如果找不到，则进行计算，
+然后更新缓存并返回值，如果找到了，直接返回查找到的值即可。闭包正是可以做到这一点，因为它不会释放外部的引用，
+从而函数内部的值可以得以保留。</p>
+<pre><code class="language-js">var CachedSearchBox = (function(){    
+    var cache = {},    
+       count = [];    
+    return {    
+       attachSearchBox : function(dsid){    
+           if(dsid in cache){//如果结果在缓存中    
+              return cache[dsid];//直接返回缓存中的对象    
+           }    
+           var fsb = new uikit.webctrl.SearchBox(dsid);//新建    
+           cache[dsid] = fsb;//更新缓存    
+           if(count.length &gt; 100){//保正缓存的大小&lt;=100    
+              delete cache[count.shift()];    
+           }    
+           return fsb;          
+       },    
+     
+       clearSearchBox : function(dsid){    
+           if(dsid in cache){    
+              cache[dsid].clearSelection();      
+           }    
+       }    
+    };    
+})();    
+     
+CachedSearchBox.attachSearchBox(&quot;input1&quot;);
+</code></pre>
+<ul>
+<li>模块化的封装</li>
+</ul>
+<p>由于javaScript函数作用域的特性，我们无法在函数外部直接访问函数内部的变量，利用函数的闭包模拟块级作用域，可以将内部的变量对外隐藏，同时开放对外的接口，由此进行模块化的开发。</p>
+<pre><code class="language-js">function func(){
+    var a = &quot;hello&quot;;
+    var b = &quot;world&quot;;
+    function getA() {
+        return a;
     }
-</script>
+    function setA() {
+        a = a + b;
+    }
+    return {
+        getA: getA,
+        setA: setA
+    }
+}
+var c = func();
+c.getA();
+c.setA();
+c.getA();
+</code></pre>
+<h3>3.参考链接</h3>
+<p><a href="https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/00143449934543461c9d5dfeeb848f5b72bd012e1113d15000" target="_blank" rel="noopener">廖老师讲解闭包</a></p>
+
+        
+    
 
     
 </div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/post/web-browser-cache/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
         
@@ -556,6 +830,14 @@ It will not impact the appearance and can give developers a lot of support :)
 </aside>
 
         
+
+        
+        <!-- Footer Top Button -->
+        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
 
         
 
