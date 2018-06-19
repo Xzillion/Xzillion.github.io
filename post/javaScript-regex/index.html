@@ -45,7 +45,7 @@
     
     <title>
         
-            标签: JavaScript | 
+            javaScript常用正则表达式 | 
         
         Xzillion&#39;s Blog
     </title>
@@ -55,8 +55,9 @@
     <link rel="icon" href="http://odqpd0nco.bkt.clouddn.com/blog/images/1488003881200tmp.jpg">
 
     <meta name="format-detection" content="telephone=no"/>
-    <meta name="description" itemprop="description" content="a blog for coding and life">
-    <meta name="keywords" content="xzillion">
+    <meta name="description" itemprop="description" content="
+收集常用正则表达式">
+    <meta name="keywords" content="xzillion,JavaScript,正则表达式">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -217,7 +218,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Xzillion&#39;s Blog">
-    <meta name="msapplication-starturl" content="https://blog.bestxz.cn/tags/JavaScript/">
+    <meta name="msapplication-starturl" content="https://blog.bestxz.cn/post/javaScript-regex/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Xzillion&#39;s Blog">
@@ -236,13 +237,17 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="https://blog.bestxz.cn/tags/JavaScript/">
+    <meta property="og:url" content="https://blog.bestxz.cn/post/javaScript-regex/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="标签: JavaScript | Xzillion&#39;s Blog">
+    <meta property="og:title" content="javaScript常用正则表达式 | Xzillion&#39;s Blog">
     <meta property="og:image" content="http://odqpd0nco.bkt.clouddn.com/blog/images/1488003881200tmp.jpg">
-    <meta property="og:description" content="a blog for coding and life">
-    
+    <meta property="og:description" content="
+收集常用正则表达式">
+    <meta property="og:article:tag" content="JavaScript"> <meta property="og:article:tag" content="正则表达式"> 
 
+    
+        <meta property="article:published_time" content="Tue Jun 19 2018 23:43:13 GMT+0800">
+        <meta property="article:modified_time" content="Tue Jun 19 2018 23:47:19 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -250,13 +255,44 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://blog.bestxz.cn/tags/JavaScript/index.html" />
+        <link rel="canonical" href="https://blog.bestxz.cn/post/javaScript-regex/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://blog.bestxz.cn/post/javaScript-regex/index.html",
+    "headline": "javaScript常用正则表达式",
+    "datePublished": "Tue Jun 19 2018 23:43:13 GMT+0800",
+    "dateModified": "Tue Jun 19 2018 23:47:19 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "Xzillion",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://odqpd0nco.bkt.clouddn.com/blog/images/1488003881200tmp.jpg"
+        },
+        "description": "逐梦者 筑梦者"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Xzillion&#39;s Blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "http://odqpd0nco.bkt.clouddn.com/blog/images/1488003881200tmp.jpg"
+        }
+    },
+    "keywords": ",JavaScript,正则表达式xzillion",
+    "description": "
+收集常用正则表达式",
+}
+</script>
 
 
     
@@ -294,398 +330,276 @@
         </a>
         
 
-         <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+        <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">1.</span> <span class="post-toc-text">常用正则表达式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">2.</span> <span class="post-toc-text">常用网址</span></a></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="http://odqpd0nco.bkt.clouddn.com/blog/images/javaScript-regex.JPEG">
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://odqpd0nco.bkt.clouddn.com/blog/images/javaScript-regex.JPEG)">
     
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/post/javaScript-regex/">javaScript常用正则表达式</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-收集常用正则表达式
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/post/javaScript-regex/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="http://odqpd0nco.bkt.clouddn.com/blog/images/1488003881200tmp.jpg" width="44px" height="44px" alt="Xzillion's avatar">
-            </div>
-            <div>
-                <strong>Xzillion</strong>
-                <span>6月 19, 2018</span>
-            </div>
+            <p class="article-headline-p">
+                javaScript常用正则表达式
+            </p>
         </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/技术之光/">技术之光</a>
-              </span>
-            
 
-            
 
-            
 
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="http://odqpd0nco.bkt.clouddn.com/blog/images/1488003881200tmp.jpg" width="44px" height="44px" alt="Author Avatar"/>
     </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="http://odqpd0nco.bkt.clouddn.com/blog/images/javaScript-closure.jpg">
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/post/javaScript-closure/">javaScript中的闭包</a></p>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Xzillion</strong>
+        <span>6月 19, 2018</span>
     </div>
 
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-敲黑板的重点
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/post/javaScript-closure/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="http://odqpd0nco.bkt.clouddn.com/blog/images/1488003881200tmp.jpg" width="44px" height="44px" alt="Xzillion's avatar">
-            </div>
-            <div>
-                <strong>Xzillion</strong>
-                <span>6月 17, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/技术之光/">技术之光</a>
-              </span>
-            
+    <div class="section-spacer"></div>
 
-            
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
 
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
+    <!-- Qrcode -->
     
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
     
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="http://odqpd0nco.bkt.clouddn.com/blog/images/prototype_relation.png">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACdUlEQVR42u3aQZLCMAwEwPz/07tXqnYJI8kxgeqcKCDg5mCJsY6fr74OPDw8PDw8PDy8m/GO+Hp21+Mz/3zZn/ecf+aCteHh4eFt4b3YagNectc5+/xxYW14eHh4G3nPNtxeAXj2nl6pSNaGh4eHd39esnGfl5bq9+Lh4eF9Lq/6niRKwMPDw/tEXjU4WBVMVFvzC7MWPDw8vJhX3b53Pt56voeHh4cX8MojTYNINx8XGK0QDw8P72JevhEni0iGtPJX8/Xg4eHhvYtX/dt//gP1frL805ZlLXh4eHhF3uTIKi8tvZ8sCSmifwx4eHh4S3nJ8XwvekgOzAoDAZOUGg8PD28pb3LsNGmy8zA3LzN4eHh47+XlB2BVZD6U0AyF8fDw8LbwerHpZBG9A7NocAEPDw/vYl4eB1SHsRJSfhiWfDIeHh7eHt4kSkhChN5dk3AZDw8PbycvaliLkW7Oq45hNf8x4OHh4S3irWptq4dVeXC8bKYMDw8PbwuvVxJ6oXBehPDw8PDey0ta52qzOyknvQAXDw8Pbw8vGZnqtcurCkM52sDDw8PbyKuOEUzGC+Z3FYau8PDw8LbwVpWKatywoHHHw8PD28ibgNeGuXk8UQ4j8PDw8Ma8XoObb9ZHfPUCiPI0Lh4eHt6YV/36aiucjxfkIW9hdAAPDw/vMl4epPY29+pQVz7K0Dzfw8PDw1vEyzfoapSQNOV5obrwfA8PDw/vYl4+MtVr1vPjNzw8PLz78/KCMQksksOzSwoDHh4e3tKcM3/+xSLioYR8wAsPDw9vJ68XAVTHBaoNd3VoAA8PD28P7/suPDw8PDw8PDy8G1y/NpNdycD5SvkAAAAASUVORK5CYII=">
+    
+</ul>
+
     
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/post/javaScript-prototype/">javaScript中的原型</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-javascript 不包含传统的类继承模型，而是使用名为 prototype 的原型模型。虽然这经常被当作是javaScript的缺点被提及，但是基于原型的继承模型比传统的类继承还要强大。
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/post/javaScript-prototype/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="http://odqpd0nco.bkt.clouddn.com/blog/images/1488003881200tmp.jpg" width="44px" height="44px" alt="Xzillion's avatar">
-            </div>
-            <div>
-                <strong>Xzillion</strong>
-                <span>6月 12, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/技术之光/">技术之光</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
+    <!-- Tags (bookmark) -->
     
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="http://odqpd0nco.bkt.clouddn.com/blog/images/imageZoom.jpg">
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/JavaScript/">JavaScript</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/正则表达式/">正则表达式</a>
+    </ul>
     
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/post/ImageZoom/">图片放大镜的分析与实现</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-
-当我们浏览电商网站时，我们通常需要通过商品的图片来了解一些细节，但是由于内容和排版的限制，电商网站展示的都是统一尺寸规格的图片，导致我们难以从小图中观察到商品的细节。为了给顾客展示更多的商品细节，电商网站都会提供一种图片放大技术用以辅助顾客对商品进行观察。
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/post/ImageZoom/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="http://odqpd0nco.bkt.clouddn.com/blog/images/1488003881200tmp.jpg" width="44px" height="44px" alt="Xzillion's avatar">
-            </div>
-            <div>
-                <strong>Xzillion</strong>
-                <span>5月 14, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/技术之光/">技术之光</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
+    <!-- Share -->
     
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="http://odqpd0nco.bkt.clouddn.com/blog/images/js_object.png">
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/post/JQuery-Object-and-Dom-Object/">JQuery对象和Dom对象</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-了解一下基本的概念。
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/post/JQuery-Object-and-Dom-Object/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="http://odqpd0nco.bkt.clouddn.com/blog/images/1488003881200tmp.jpg" width="44px" height="44px" alt="Xzillion's avatar">
-            </div>
-            <div>
-                <strong>Xzillion</strong>
-                <span>5月 12, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/技术之光/">技术之光</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="http://odqpd0nco.bkt.clouddn.com/blog/images/angularJs.png">
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/post/angularJs-browser-history/">angularJs应用如何去除路径上的#号？</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-作为强迫症晚期患者，当然不能容许#号的存在。
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/post/angularJs-browser-history/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="http://odqpd0nco.bkt.clouddn.com/blog/images/1488003881200tmp.jpg" width="44px" height="44px" alt="Xzillion's avatar">
-            </div>
-            <div>
-                <strong>Xzillion</strong>
-                <span>5月 10, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/技术之光/">技术之光</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
     
 
     
 
+    <!-- Share Weibo -->
     
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=javaScript常用正则表达式&url=https://blog.bestxz.cn/post/javaScript-regex/index.html&pic=https://blog.bestxz.cnhttp://odqpd0nco.bkt.clouddn.com/blog/images/1488003881200tmp.jpg&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
 
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=javaScript常用正则表达式&url=https://blog.bestxz.cn/post/javaScript-regex/index.html&via=Xzillion" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
 
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
-    $('.post_thumbnail-random').addClass('lazy');
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.bestxz.cn/post/javaScript-regex/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
 
-        locatePost = locatePost.next();
-    }
-</script>
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://blog.bestxz.cn/post/javaScript-regex/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
 
     
 </div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <blockquote>
+<p>收集常用正则表达式
+<a id="more"></a></p>
+</blockquote>
+<h3>常用正则表达式</h3>
+<ul>
+<li>匹配身份证</li>
+</ul>
+<pre><code>/^(\d{17})(\d|[Xx])$/.test(str)
+</code></pre>
+<ul>
+<li>匹配手机号</li>
+</ul>
+<pre><code>/^1[34578]\d{9}$/.test(str)
+</code></pre>
+<ul>
+<li>匹配连续n+1位数字连续出现</li>
+</ul>
+<pre><code>/([0-9])\1{n}/.test(str)
+</code></pre>
+<ul>
+<li>匹配连续n+1位数字升序/降序</li>
+</ul>
+<pre><code>/(?:(?:0(?=1)|1(?=2)|2(?=3)|3(?=4)|4(?=5)|5(?=6)|6(?=7)|7(?=8)|8(?=9)){n}|(?:9(?=8)|8(?=7)|7(?=6)|6(?=5)|5(?=4)|4(?=3)|3(?=2)|2(?=1)|1(?=0)){n})\d/.test(str)
+</code></pre>
+<ul>
+<li>匹配中文字符</li>
+</ul>
+<pre><code>/^[\u4e00-\u9fa5]*$/.test(str)
+</code></pre>
+<ul>
+<li>匹配非空格字符</li>
+</ul>
+<pre><code>/^[^\s]*$/.test(str)
+</code></pre>
+<ul>
+<li>匹配所有字符</li>
+</ul>
+<pre><code>/^[\S\s]/.test(str)
+</code></pre>
+<ul>
+<li>金额数字格式化</li>
+</ul>
+<pre><code>str.replace(/(\d)(?=(\d{3})+$)/g, (rs, $1) =&gt; {
+    return $1 + &quot;,&quot;;
+})
+// or
+str.replace(/(\d)(?=(\d{3})+$)/g, &quot;$1,&quot;)
+// 支持小数
+str.replace(/(?=\B(?:\d{3})+\b)(\d{3}(\.\d+$)?)/g, &quot;,$1&quot;)
+</code></pre>
+<h3>常用网址</h3>
+<p><a href="http://www.jb51.net/shouce/jquery1.82/regexp.html" target="_blank" rel="noopener">1. 正则表达式速查</a><br>
+<a href="http://tool.oschina.net/regex/" target="_blank" rel="noopener">2. 正则表达式测试</a><br>
+<a href="http://www.jb51.net/tools/zhengze.html" target="_blank" rel="noopener">3. 正则表达式入门</a></p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/post/javaScript-closure/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
         
@@ -857,6 +771,14 @@ It will not impact the appearance and can give developers a lot of support :)
 </aside>
 
         
+
+        
+        <!-- Footer Top Button -->
+        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
 
         
 

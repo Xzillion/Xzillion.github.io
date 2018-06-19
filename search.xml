@@ -3,6 +3,29 @@
   
     
     <entry>
+      <title>javaScript常用正则表达式</title>
+      <link href="/post/javaScript-regex/"/>
+      <url>/post/javaScript-regex/</url>
+      <content type="html"><![CDATA[<blockquote><p>收集常用正则表达式<a id="more"></a></p></blockquote><h3>常用正则表达式</h3><ul><li>匹配身份证</li></ul><pre><code>/^(\d{17})(\d|[Xx])$/.test(str)</code></pre><ul><li>匹配手机号</li></ul><pre><code>/^1[34578]\d{9}$/.test(str)</code></pre><ul><li>匹配连续n+1位数字连续出现</li></ul><pre><code>/([0-9])\1{n}/.test(str)</code></pre><ul><li>匹配连续n+1位数字升序/降序</li></ul><pre><code>/(?:(?:0(?=1)|1(?=2)|2(?=3)|3(?=4)|4(?=5)|5(?=6)|6(?=7)|7(?=8)|8(?=9)){n}|(?:9(?=8)|8(?=7)|7(?=6)|6(?=5)|5(?=4)|4(?=3)|3(?=2)|2(?=1)|1(?=0)){n})\d/.test(str)</code></pre><ul><li>匹配中文字符</li></ul><pre><code>/^[\u4e00-\u9fa5]*$/.test(str)</code></pre><ul><li>匹配非空格字符</li></ul><pre><code>/^[^\s]*$/.test(str)</code></pre><ul><li>匹配所有字符</li></ul><pre><code>/^[\S\s]/.test(str)</code></pre><ul><li>金额数字格式化</li></ul><pre><code>str.replace(/(\d)(?=(\d{3})+$)/g, (rs, $1) =&gt; {    return $1 + &quot;,&quot;;})// orstr.replace(/(\d)(?=(\d{3})+$)/g, &quot;$1,&quot;)// 支持小数str.replace(/(?=\B(?:\d{3})+\b)(\d{3}(\.\d+$)?)/g, &quot;,$1&quot;)</code></pre><h3>常用网址</h3><p><a href="http://www.jb51.net/shouce/jquery1.82/regexp.html" target="_blank" rel="noopener">1. 正则表达式速查</a><br><a href="http://tool.oschina.net/regex/" target="_blank" rel="noopener">2. 正则表达式测试</a><br><a href="http://www.jb51.net/tools/zhengze.html" target="_blank" rel="noopener">3. 正则表达式入门</a></p>]]></content>
+      
+      <categories>
+          
+          <category> 技术之光 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+            <tag> 正则表达式 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>javaScript中的闭包</title>
       <link href="/post/javaScript-closure/"/>
       <url>/post/javaScript-closure/</url>
@@ -176,9 +199,9 @@
       
         <tags>
             
-            <tag> angularJs </tag>
-            
             <tag> JavaScript </tag>
+            
+            <tag> angularJs </tag>
             
             <tag> Web </tag>
             
