@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="806498c9-d041-435e-b2c4-f5354b90e95a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/static/shareClassCode/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/shareClassCode/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/shareClassCode/static/css/app.a9f11c186c7239b228b894b1b0fdb520.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/shareClassCode/static/css/app.a9f11c186c7239b228b894b1b0fdb520.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/shareClassCode/static/img/banner.ccd8222.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/shareClassCode/static/js/app.7f3913eaaf135ff0bc64.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/shareClassCode/static/js/app.7f3913eaaf135ff0bc64.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/shareClassCode/static/js/manifest.3ad1d5771e9b13dbdad2.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/shareClassCode/static/js/manifest.3ad1d5771e9b13dbdad2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/shareClassCode/static/js/manifest.3ad1d5771e9b13dbdad2.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/shareClassCode/static/js/vendor.fa2211508736e9cdc8dc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/shareClassCode/static/js/vendor.fa2211508736e9cdc8dc.js.map" beforeDir="false" />
-    </list>
+    <list default="true" id="806498c9-d041-435e-b2c4-f5354b90e95a" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -24,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="app.b940befdd3b13535d4b6.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/shareClassCode/static/js/app.b940befdd3b13535d4b6.js">
           <provider selected="true" editor-type-id="text-editor" />
@@ -107,11 +96,12 @@
       <option name="presentableId" value="Default" />
       <updated>1552709613370</updated>
       <workItem from="1552709614547" duration="1678000" />
+      <workItem from="1552881742649" duration="622000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1678000" />
+    <option name="totallyTimeSpent" value="2300000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -123,25 +113,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973601" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3293348" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Gerrit" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.7044711" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.7039106" />
+      <window_info anchor="bottom" id="RNConsole" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +144,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/static/shareClassCode/static/js/app.b940befdd3b13535d4b6.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/shareClassCode/static/js/app.b940befdd3b13535d4b6.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>

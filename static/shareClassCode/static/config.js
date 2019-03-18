@@ -5,39 +5,23 @@
  */
 window.class_code_config = [
   {
-    name: '一年级',
-    code: './static/class1.png'
-  },
-  {
-    name: '二年级',
-    code: './static/class2.png'
-  },
-  {
-    name: '三年级',
-    code: './static/class3.png'
-  },
-  {
-    name: '四年级',
-    code: './static/class4.png'
+    name: '1~4年级',
+    code: './static/class1_4.jpg'
   },
   {
     name: '五年级',
-    code: './static/class5.png'
+    code: './static/class5.jpg'
   },
   {
     name: '六年级',
-    code: './static/class6.png'
+    code: './static/class6.jpg'
   },
   {
     name: '七年级',
-    code: './static/class7.png'
+    code: './static/class7.jpg'
   },
   {
     name: '八年级',
-    code: './static/class8.png'
-  },
-  {
-    name: '九年级',
-    code: './static/class9.png'
+    code: './static/class8.jpg'
   }
 ]
