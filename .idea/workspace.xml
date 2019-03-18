@@ -14,30 +14,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="app.3f4d2989c06aadc93573.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/shareClassCode/static/js/app.3f4d2989c06aadc93573.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="app.c159dc4b05de9b8f98bc.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/shareClassCode/static/js/app.c159dc4b05de9b8f98bc.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="classCode.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/shareClassCode/classCode.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="151" selection-start-column="146" selection-end-column="151" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/shareClassCode/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
               <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.b940befdd3b13535d4b6.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/shareClassCode/static/js/app.b940befdd3b13535d4b6.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="52" selection-start-column="52" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -70,7 +60,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="1244" />
     <option name="height" value="1047" />
@@ -141,12 +131,12 @@
       <option name="presentableId" value="Default" />
       <updated>1552709613370</updated>
       <workItem from="1552709614547" duration="1678000" />
-      <workItem from="1552881742649" duration="3302000" />
+      <workItem from="1552881742649" duration="4029000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4980000" />
+    <option name="totallyTimeSpent" value="5707000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -192,9 +182,6 @@
     <entry file="file://$PROJECT_DIR$/static/shareClassCode/static/js/app.b940befdd3b13535d4b6.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/shareClassCode/static/js/app.b940befdd3b13535d4b6.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/shareClassCode/static/js/app.3f4d2989c06aadc93573.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -212,6 +199,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/shareClassCode/static/js/app.b940befdd3b13535d4b6.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="52" selection-start-column="52" selection-end-column="52" />
         </state>
       </provider>
     </entry>
