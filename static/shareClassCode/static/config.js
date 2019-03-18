@@ -25,3 +25,6 @@ window.class_code_config = [
     code: './static/class8.jpg'
   }
 ]
+window.class_code_config.forEach(function (item) {
+  item.code = item.code + '?version=' + Date.now()
+})
