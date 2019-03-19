@@ -23,6 +23,10 @@ window.class_code_config = [
   {
     name: '八年级',
     code: './static/class8.jpg'
+  },
+  {
+    name: '九年级及以上',
+    code: './static/class9+.jpg'
   }
 ]
 window.class_code_config.forEach(function (item) {
