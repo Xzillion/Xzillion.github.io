@@ -18,15 +18,15 @@ window.class_code_config = [
   },
   {
     name: '七年级',
-    code: './static/class7_1.png'
+    code: './static/class7.png'
   },
   {
     name: '八年级',
-    code: './static/class8_1.png'
+    code: './static/class8.png'
   },
   {
     name: '九年级及以上',
-    code: './static/class9+.jpg'
+    code: './static/class9+.png'
   }
 ]
 window.class_code_config.forEach(function (item) {
