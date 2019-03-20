@@ -18,11 +18,11 @@ window.class_code_config = [
   },
   {
     name: '七年级',
-    code: './static/class7.png'
+    code: './static/class7_1.png'
   },
   {
     name: '八年级',
-    code: './static/class8.png'
+    code: './static/class8_1.png'
   },
   {
     name: '九年级及以上',
