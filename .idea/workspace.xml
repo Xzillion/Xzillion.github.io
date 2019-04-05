@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="806498c9-d041-435e-b2c4-f5354b90e95a" name="Default" comment="" />
+    <list default="true" id="806498c9-d041-435e-b2c4-f5354b90e95a" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/shareClassCode2/classCode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/shareClassCode2/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/shareClassCode2/static/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/shareClassCode2/static/css/app.e9b6583d1c6d6f7118dd4efd0fa8b420.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/shareClassCode2/static/img/banner.e6e420b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/shareClassCode2/static/img/teacher.fbe6908.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/shareClassCode2/static/js/app.f1f74a1d49d509e8db60.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/shareClassCode2/static/js/manifest.3ad1d5771e9b13dbdad2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/shareClassCode2/static/js/vendor.d2dd5fd13257fa3b31f0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -14,20 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/shareClassCode/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.b940befdd3b13535d4b6.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/shareClassCode/static/js/app.b940befdd3b13535d4b6.js">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="52" selection-start-column="52" selection-end-column="52" />
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -48,6 +51,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/static/shareClassCode/index.html" />
+        <option value="$PROJECT_DIR$/static/shareClassCode2/classCode.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -60,7 +65,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="1244" />
     <option name="height" value="1047" />
@@ -74,19 +79,34 @@
         <subPane>
           <expand>
             <path>
-              <item name="xzillion.coding.me" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xzillion.coding.me" type="462c0819:PsiDirectoryNode" />
+              <item name="Xzillion.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Xzillion.github.io" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="xzillion.coding.me" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xzillion.coding.me" type="462c0819:PsiDirectoryNode" />
+              <item name="Xzillion.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Xzillion.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="xzillion.coding.me" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xzillion.coding.me" type="462c0819:PsiDirectoryNode" />
+              <item name="Xzillion.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Xzillion.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="shareClassCode" type="462c0819:PsiDirectoryNode" />
+              <item name="shareClassCode2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Xzillion.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Xzillion.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="shareClassCode2" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Xzillion.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Xzillion.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="shareClassCode2" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -104,6 +124,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\Xzillion.github.io\static" />
       <recent name="C:\mySpace\xzillion.coding.me\static\shareClassCode" />
       <recent name="D:\workspace\xzillion.coding.me\static\shareClassCode" />
     </key>
@@ -132,11 +153,12 @@
       <updated>1552709613370</updated>
       <workItem from="1552709614547" duration="1678000" />
       <workItem from="1552881742649" duration="4029000" />
+      <workItem from="1554438223422" duration="77000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5707000" />
+    <option name="totallyTimeSpent" value="5784000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -151,22 +173,22 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973601" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15858799" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3293348" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Gerrit" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32960895" />
-      <window_info anchor="bottom" id="RNConsole" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32606325" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Gerrit" order="8" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="RNConsole" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -179,25 +201,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/shareClassCode/static/js/app.b940befdd3b13535d4b6.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/shareClassCode/static/js/app.3f4d2989c06aadc93573.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/shareClassCode/static/js/app.c159dc4b05de9b8f98bc.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/shareClassCode/classCode.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="151" selection-start-column="146" selection-end-column="151" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/shareClassCode/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
+        <state relative-caret-position="85">
           <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
         </state>
       </provider>
@@ -206,6 +212,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="52" selection-start-column="52" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/shareClassCode/static/js/app.b940befdd3b13535d4b6.js" />
+    <entry file="file://$PROJECT_DIR$/static/shareClassCode/static/js/app.3f4d2989c06aadc93573.js" />
+    <entry file="file://$PROJECT_DIR$/static/shareClassCode/static/js/app.c159dc4b05de9b8f98bc.js" />
+    <entry file="file://$PROJECT_DIR$/static/shareClassCode/classCode.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="151" selection-start-column="146" selection-end-column="151" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/shareClassCode/static/js/app.b940befdd3b13535d4b6.js" />
+    <entry file="file://$PROJECT_DIR$/static/shareClassCode2/classCode.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="152" selection-start-column="152" selection-end-column="152" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/shareClassCode2/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/shareClassCode2/static/js/app.f1f74a1d49d509e8db60.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/shareClassCode/static/config.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/shareClassCode/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
